@@ -1,840 +1,579 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yuvraj Sarathe | Production-First Developer</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-        <meta name="description" content="Yuvraj Sarathe - Production-First Developer specializing in Java, Python, and Cyber Security. B.Tech student at LNCT Bhopal.">
-        <meta name="keywords" content="developer, portfolio, Java, Python, cyber security, LNCT Bhopal">
-        <meta name="author" content="Yuvraj Sarathe">
-        <meta property="og:title" content="Yuvraj Sarathe | Production-First Developer">
-        <meta property="og:description" content="I don't just write code—I ship software that works immediately.">
-        <meta property="og:image" content="Square LOGO.png">
-        <meta property="og:url" content="https://mikky-mlh.github.io/Portfolio/">
-        <meta property="og:type" content="website">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Yuvraj Sarathe | Production-First Developer">
-        <meta name="twitter:description" content="Production-first developer shipping standalone executables.">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    </head>
-    <body>
-        <!-- Custom Cursor with Trail -->
-        <div class="cursor-container">
-            <div class="cursor-dot"></div>
-            <div class="cursor-trail trail-1"></div>
-            <div class="cursor-trail trail-2"></div>
-            <div class="cursor-trail trail-3"></div>
-            <div class="cursor-trail trail-4"></div>
-            <div class="cursor-trail trail-5"></div>
-        </div>
+<html lang="en" data-theme="obsidian">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Sarathe — Production-First Developer</title>
+    <meta name="description" content="Yuvraj Sarathe — B.Tech Cyber Security student at LNCT Bhopal. I ship production-ready executables, not scripts that sit in an editor.">
+    <meta name="keywords" content="Yuvraj Sarathe, developer, portfolio, Java, Python, cyber security, LNCT Bhopal, Mikky-mlh">
+    <meta name="author" content="Yuvraj Sarathe">
+    <meta property="og:title" content="Yuvraj Sarathe — Production-First Developer">
+    <meta property="og:description" content="B.Tech Cyber Security student shipping production-ready standalone software.">
+    <meta property="og:image" content="Square LOGO.png">
+    <meta property="og:url" content="https://mikky-mlh.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yuvraj Sarathe — Production-First Developer">
+    <meta name="twitter:description" content="Production-first developer shipping standalone executables.">
 
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="container nav-container">
-                <a href="#about" class="nav-brand">
-                    <span class="logo-icon"><img src="Square LOGO.png" alt="Logo"></span> Yuvraj Sarathe
-                </a>
-                <div class="nav-menu">
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#philosophy" class="nav-link">Philosophy</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#roadmap" class="nav-link">Roadmap</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to content for keyboard users -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Animated grain texture overlay -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="Go to top">
+                <img src="Square LOGO.png" alt="Yuvraj Sarathe logo" class="nav-logo-img" width="28" height="28">
+                <span class="nav-logo-text">Yuvraj Sarathe</span>
+            </a>
+
+            <div class="nav-links" role="list">
+                <a href="#about" class="nav-link" role="listitem">About</a>
+                <a href="#projects" class="nav-link" role="listitem">Projects</a>
+                <a href="#skills" class="nav-link" role="listitem">Skills</a>
+                <a href="#roadmap" class="nav-link" role="listitem">Roadmap</a>
+                <a href="#contact" class="nav-link" role="listitem">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeToggle" aria-label="Switch color theme" title="Switch theme">
+                    <span class="theme-btn-dot"></span>
+                    <span class="theme-btn-label" id="themeName">Obsidian</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
                 </button>
             </div>
-        </nav>
+        </div>
 
-        <!-- Hero Section -->
-        <header id="about" class="hero">
-            <div class="hero-background">
-                <div class="hero-grid"></div>
-            </div>
-            <div class="container hero-container">
-                <div class="hero-content animate__animated animate__fadeInUp">
-                    <div class="badge">
-                        <span class="badge-dot"></span>
-                        <span class="badge-text">Polyglot Developer</span>
-                        <span class="badge-divider">•</span>
-                        <span class="badge-text">Cyber Security Student</span>
-                    </div>
-                    
-                    <h1 class="hero-title">
-                        <span class="hero-greeting">Hey, I'm</span>
-                        <span class="hero-name">Yuvraj Sarathe</span>
-                    </h1>
-                    
-                    <div class="static-text">
-                        <span>I ship production-ready executables</span>
-                    </div>
-                    
-                    <p class="tagline">
-                        <strong>Most developers write code. I ship software.</strong><br>
-                        1st-year B.Tech Cyber Security student with a production-first approach. 
-                        I eliminate "setup hell" by packaging every project for immediate execution.
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="menu">
+            <a href="#about" class="mobile-link" role="menuitem">About</a>
+            <a href="#projects" class="mobile-link" role="menuitem">Projects</a>
+            <a href="#skills" class="mobile-link" role="menuitem">Skills</a>
+            <a href="#roadmap" class="mobile-link" role="menuitem">Roadmap</a>
+            <a href="#contact" class="mobile-link" role="menuitem">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main">
+
+        <!-- ═══════════════ HERO ═══════════════ -->
+        <header id="hero" class="hero">
+            <div class="hero-inner">
+
+                <div class="hero-eyebrow" data-animate="fade-up">
+                    <span class="status-pulse" aria-label="Currently available"></span>
+                    <span class="status-text">Available for internships &amp; collaborations</span>
+                    <span class="hero-meta">
+                        <span>B.Tech Cyber Security</span>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <span>LNCT Bhopal</span>
+                        <span class="dot-sep" aria-hidden="true">·</span>
+                        <span class="mono">2025–2029</span>
+                    </span>
+                </div>
+
+                <h1 class="hero-name" aria-label="Yuvraj Sarathe">
+                    <span class="hero-name-line" data-animate="slide-up" data-delay="1">Yuvraj</span>
+                    <span class="hero-name-line hero-name-accent" data-animate="slide-up" data-delay="2">Sarathe</span>
+                </h1>
+
+                <div class="hero-rule" data-animate="expand" data-delay="3" aria-hidden="true"></div>
+
+                <div class="hero-bottom" data-animate="fade-up" data-delay="4">
+                    <p class="hero-role">Production-First Developer</p>
+                    <p class="hero-desc">
+                        Most developers write code. I ship software. Every project is packaged
+                        as a standalone executable — zero setup, immediate execution.
                     </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> View Projects
-                        </a>
-                        <a href="https://github.com/Mikky-mlh" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-github"></i> GitHub Profile
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i> Get In Touch
-                        </a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">68+</span>
-                            <span class="stat-label">DSA Problems</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">76%</span>
-                            <span class="stat-label">LeetCode Acceptance</span>
-                        </div>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View projects</a>
+                        <a href="https://github.com/Mikky-mlh" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
+                        <a href="#contact" class="btn btn-text">Get in touch →</a>
                     </div>
                 </div>
-                
-                <div class="hero-graphic animate__animated animate__fadeInRight">
-                    <div class="code-window">
-                        <div class="code-header">
-                            <div class="code-dots">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                            </div>
-                            <span class="code-title">production_first.sh</span>
-                        </div>
-                        <div class="code-body">
-                            <pre><code><span class="code-comment"># The Production-First Difference</span>
 
-<span class="code-keyword">echo</span> <span class="code-string">"📦 Java: Bundled JRE"</span>
-<span class="code-keyword">echo</span> <span class="code-string">"   → Zero-friction .exe execution"</span>
-
-<span class="code-keyword">echo</span> <span class="code-string">"🐍 Python: PyInstaller"</span>
-<span class="code-keyword">echo</span> <span class="code-string">"   → Standalone binaries"</span>
-
-<span class="code-keyword">echo</span> <span class="code-string">"🛡️ Security: Day One"</span>
-<span class="code-keyword">echo</span> <span class="code-string">"   → Input validation + Exception handling"</span>
-
-<span class="code-comment"># Result: Just download and run! 🚀</span></code></pre>
-                        </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="5">
+                    <div class="stat-item">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Projects shipped</span>
                     </div>
-                    
-                    <div class="info-cards-grid">
-                        <div class="info-card mini">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <strong>B.Tech Cyber Security</strong>
-                                <span>LNCT, Bhopal • 2025-2029</span>
-                            </div>
-                        </div>
-                        <div class="info-card mini">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Bhopal, MP</strong>
-                                <span>Available for Remote</span>
-                            </div>
-                        </div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">68+</span>
+                        <span class="stat-label">DSA problems</span>
+                    </div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">76%</span>
+                        <span class="stat-label">LeetCode acceptance</span>
+                    </div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Live AI apps</span>
                     </div>
                 </div>
+
+            </div>
+            <div class="hero-scroll-hint" aria-hidden="true">
+                <span class="scroll-hint-line"></span>
+                <span class="scroll-hint-text">scroll</span>
             </div>
         </header>
 
-        <!-- Philosophy Section -->
-        <section id="philosophy" class="section philosophy-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">What Sets Me Apart</span>
-                    <h2 class="section-title">The Production-First Difference</h2>
-                    <p class="section-subtitle">I don't just write code—I ship software that works immediately</p>
+        <!-- ═══════════════ APPROACH ═══════════════ -->
+        <section id="about" class="section approach-section">
+            <div class="section-inner">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-num" aria-hidden="true">01</span>
+                    <h2 class="section-heading">The production-first difference</h2>
                 </div>
-                
-                <div class="philosophy-grid">
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <h3>Java Applications</h3>
-                        <p>Bundled JRE for zero-friction <code>.exe</code> execution. No JDK required on user machines.</p>
-                        <div class="philosophy-tag">Just Download & Run</div>
+
+                <div class="approach-grid">
+                    <div class="approach-item" data-animate="fade-up" data-delay="1">
+                        <span class="approach-num" aria-hidden="true">01</span>
+                        <h3>Java applications</h3>
+                        <p>Bundled JRE (the runtime environment users need to execute Java programs) for zero-friction <code>.exe</code> execution. No JDK installation required on user machines.</p>
+                        <span class="approach-tag">Just download &amp; run</span>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h3>Python Projects</h3>
-                        <p>Standalone binaries via PyInstaller. No Python interpreter needed on the target system.</p>
-                        <div class="philosophy-tag">No Dependencies</div>
+
+                    <div class="approach-item" data-animate="fade-up" data-delay="2">
+                        <span class="approach-num" aria-hidden="true">02</span>
+                        <h3>Python projects</h3>
+                        <p>Standalone binaries via PyInstaller (a tool that packs Python code and all its dependencies into a single distributable file). No Python interpreter needed on the target machine.</p>
+                        <span class="approach-tag">No dependencies</span>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Security First</h3>
-                        <p>Built with input validation and exception handling from day one.</p>
-                        <div class="philosophy-tag">Secure by Design</div>
+
+                    <div class="approach-item" data-animate="fade-up" data-delay="3">
+                        <span class="approach-num" aria-hidden="true">03</span>
+                        <h3>Security from day one</h3>
+                        <p>Input validation (checking that user data is safe before processing it) and exception handling (intercepting errors before they crash the program) are not afterthoughts — they're built in at the start.</p>
+                        <span class="approach-tag">Secure by design</span>
                     </div>
-                    
-                    <div class="philosophy-card">
-                        <div class="philosophy-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Pattern-Based Learning</h3>
-                        <p>Patterns are learned, not discovered. Systematic approach to problem-solving and algorithm design.</p>
-                        <div class="philosophy-tag">Efficiency Obsessed</div>
+
+                    <div class="approach-item" data-animate="fade-up" data-delay="4">
+                        <span class="approach-num" aria-hidden="true">04</span>
+                        <h3>Pattern-based learning</h3>
+                        <p>DSA (Data Structures and Algorithms — the specific ways we organize and process data to solve problems efficiently) learned through pattern recognition, not rote memorization. Striver A2Z curriculum.</p>
+                        <span class="approach-tag">Efficiency obsessed</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- ═══════════════ PROJECTS ═══════════════ -->
         <section id="projects" class="section projects-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">My Work</span>
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Production-ready applications across multiple languages and domains</p>
+            <div class="section-inner">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-num" aria-hidden="true">02</span>
+                    <h2 class="section-heading">Featured work</h2>
                 </div>
 
-                <!-- Hackathon Projects -->
-                <div class="language-section featured-section">
-                    <h3 class="language-title">
-                        <i class="fas fa-trophy"></i> Hackathon Projects
-                        <span class="live-badge">LIVE</span>
-                    </h3>
-                    <div class="projects-grid">
-                        <div class="project-card hackathon">
-                            <div class="project-image hackathon-gradient-1">
-                                <i class="fas fa-university"></i>
-                                <div class="live-indicator">
-                                    <span class="pulse"></span>
+                <!-- Featured hackathon projects -->
+                <div class="featured-block" data-animate="fade-up" data-delay="1">
+                    <p class="featured-label">Live applications</p>
+                    <div class="featured-grid">
+                        <article class="featured-card">
+                            <div class="featured-card-top fc-top-1">
+                                <div class="fc-live">
+                                    <span class="live-dot" aria-label="Live"></span>
                                     Live
                                 </div>
+                                <span class="fc-year">2025</span>
                             </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">Hackathon Winner</span>
-                                    <span class="project-year">2025</span>
+                            <div class="featured-card-body">
+                                <span class="fc-type">Hackathon project</span>
+                                <h3 class="fc-title">UniSync</h3>
+                                <p class="fc-desc">Campus ecosystem platform with AI-powered peer matching. Connects students based on interests and academic goals using Google Gemini for intelligent recommendations.</p>
+                                <div class="fc-tech">
+                                    <span>Streamlit</span>
+                                    <span>Gemini AI</span>
+                                    <span>Python</span>
                                 </div>
-                                <h3 class="project-title">UniSync</h3>
-                                <p class="project-description">
-                                    Campus Ecosystem platform with AI-powered peer matching. Connects students based on 
-                                    interests, skills, and academic goals using Gemini AI for intelligent recommendations.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Streamlit</span>
-                                    <span class="tech-tag">Gemini AI</span>
-                                    <span class="tech-tag python">Python</span>
-                                    <span class="tech-tag">AI/ML</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://unisync.streamlit.app/" target="_blank" class="project-link primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo
-                                    </a>
-                                </div>
+                                <a href="https://unisync.streamlit.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="project-card hackathon">
-                            <div class="project-image hackathon-gradient-2">
-                                <i class="fas fa-brain"></i>
-                                <div class="live-indicator">
-                                    <span class="pulse"></span>
+                        <article class="featured-card">
+                            <div class="featured-card-top fc-top-2">
+                                <div class="fc-live">
+                                    <span class="live-dot" aria-label="Live"></span>
                                     Live
                                 </div>
+                                <span class="fc-year">2025</span>
                             </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">Hackathon Project</span>
-                                    <span class="project-year">2025</span>
+                            <div class="featured-card-body">
+                                <span class="fc-type">Hackathon project</span>
+                                <h3 class="fc-title">NeuralPlan</h3>
+                                <p class="fc-desc">AI-powered study planner with Vision OCR capabilities. Creates personalized study schedules that adapt to energy levels and learning patterns using Gemini Vision.</p>
+                                <div class="fc-tech">
+                                    <span>Streamlit</span>
+                                    <span>Vision OCR</span>
+                                    <span>Gemini AI</span>
                                 </div>
-                                <h3 class="project-title">NeuralPlan</h3>
-                                <p class="project-description">
-                                    AI-powered study planner with Vision OCR capabilities. Creates personalized study 
-                                    schedules that adapt to your energy levels and learning patterns.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Streamlit</span>
-                                    <span class="tech-tag">Gemini AI</span>
-                                    <span class="tech-tag">Vision OCR</span>
-                                    <span class="tech-tag">Energy-Adaptive</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://neuralplan.streamlit.app/" target="_blank" class="project-link primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo
-                                    </a>
-                                </div>
+                                <a href="https://neuralplan.streamlit.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
-                <!-- Java Projects -->
-                <div id="java-projects" class="language-section">
-                    <h3 class="language-title"><i class="fab fa-java"></i> Java Projects</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image java-gradient">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">Standalone .exe</span>
-                                    <span class="project-year">2025</span>
-                                </div>
-                                <h3 class="project-title">Hangman Game</h3>
-                                <p class="project-description">
-                                    Console game with 2000+ word database and ANSI color interface. 
-                                    Ships as a single <code>.exe</code> with bundled JRE—zero dependencies for end users.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag java">Java 14+</span>
-                                    <span class="tech-tag">Swing</span>
-                                    <span class="tech-tag">Bundled JRE</span>
-                                    <span class="tech-tag">JAR Packaging</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Source
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Editorial project list -->
+                <div class="project-list" data-animate="fade-up" data-delay="2">
+                    <p class="featured-label">All projects</p>
+                    <div class="project-list-head" aria-hidden="true">
+                        <span>Title</span>
+                        <span>Stack</span>
+                        <span>Type</span>
+                        <span>Link</span>
                     </div>
-                </div>
 
-                <!-- Python Projects -->
-                <div id="python-projects" class="language-section">
-                    <h3 class="language-title"><i class="fab fa-python"></i> Python Projects</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image python-gradient">
-                                <i class="fas fa-chess-board"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">Standalone Binary</span>
-                                    <span class="project-year">2025</span>
-                                </div>
-                                <h3 class="project-title">Connect Four</h3>
-                                <p class="project-description">
-                                    Two-player strategy game with Pygame graphics and NumPy for efficient board management.
-                                    Features O(1) win detection algorithm and adaptive display.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag python">Python 3.8+</span>
-                                    <span class="tech-tag">Pygame</span>
-                                    <span class="tech-tag">NumPy</span>
-                                    <span class="tech-tag">O(1) Detection</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Mikky-mlh/Connect4-in-Python" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Source
-                                    </a>
-                                </div>
-                            </div>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">03</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Hangman game</strong>
+                            <span class="pr-sub">2000+ word database, ANSI color interface, bundled JRE</span>
                         </div>
+                        <div class="pr-stack">
+                            <span class="tag">Java</span>
+                            <span class="tag">JAR packaging</span>
+                        </div>
+                        <span class="pr-type">Standalone .exe</span>
+                        <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Hangman game source on GitHub">GitHub ↗</a>
+                    </article>
 
-                        <div class="project-card">
-                            <div class="project-image python-gradient-alt">
-                                <i class="fas fa-dice"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">GUI Application</span>
-                                    <span class="project-year">2025</span>
-                                </div>
-                                <h3 class="project-title">Guess The Number</h3>
-                                <p class="project-description">
-                                    Number guessing game with Tkinter GUI. Features input validation, smart hints, 
-                                    and guess tracking with event-driven architecture.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag python">Python 3.8+</span>
-                                    <span class="tech-tag">Tkinter</span>
-                                    <span class="tech-tag">Event Handling</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Mikky-mlh/GuessTheNumberGame" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Source
-                                    </a>
-                                </div>
-                            </div>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">04</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Connect Four</strong>
+                            <span class="pr-sub">O(1) win detection algorithm, Pygame graphics, NumPy board management</span>
                         </div>
-                    </div>
-                </div>
+                        <div class="pr-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">NumPy</span>
+                        </div>
+                        <span class="pr-type">Standalone binary</span>
+                        <a href="https://github.com/Mikky-mlh/Connect4-in-Python" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Connect Four source on GitHub">GitHub ↗</a>
+                    </article>
 
-                <!-- C++ Projects -->
-                <div id="cpp-projects" class="language-section">
-                    <h3 class="language-title"><i class="fas fa-code"></i> C++ Projects</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image cpp-gradient">
-                                <i class="fas fa-times-circle"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">Console Game</span>
-                                    <span class="project-year">2025</span>
-                                </div>
-                                <h3 class="project-title">Tic-Tac-Toe</h3>
-                                <p class="project-description">
-                                    Classic two-player game with colorful console graphics using Windows API. 
-                                    Features AI opponent with win detection across 8 patterns.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">C++ 11+</span>
-                                    <span class="tech-tag">Windows API</span>
-                                    <span class="tech-tag">Game AI</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> View Source
-                                    </a>
-                                </div>
-                            </div>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">05</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Guess the number</strong>
+                            <span class="pr-sub">Tkinter GUI, input validation, smart hints, event-driven architecture</span>
                         </div>
-                    </div>
-                </div>
+                        <div class="pr-stack">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tkinter</span>
+                        </div>
+                        <span class="pr-type">GUI application</span>
+                        <a href="https://github.com/Mikky-mlh/GuessTheNumberGame" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Guess the Number source on GitHub">GitHub ↗</a>
+                    </article>
 
-                <!-- Web & DSA -->
-                <div class="language-section">
-                    <h3 class="language-title"><i class="fas fa-laptop-code"></i> Web Development & DSA</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-image web-gradient">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">freeCodeCamp Certified</span>
-                                    <span class="project-year">2025</span>
-                                </div>
-                                <h3 class="project-title">Web Development Projects</h3>
-                                <p class="project-description">
-                                    Collection of responsive web applications. Includes modern UI implementations, 
-                                    form handling, and production-ready interfaces.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag html">HTML5</span>
-                                    <span class="tech-tag css">CSS3</span>
-                                    <span class="tech-tag javascript">JavaScript</span>
-                                    <span class="tech-tag">Responsive</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" class="project-link primary">
-                                        <i class="fas fa-external-link-alt"></i> Live Demo
-                                    </a>
-                                    <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> Repository
-                                    </a>
-                                </div>
-                            </div>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">06</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Tic-Tac-Toe</strong>
+                            <span class="pr-sub">AI opponent, 8-pattern win detection, Windows API colored console</span>
                         </div>
+                        <div class="pr-stack">
+                            <span class="tag">C++</span>
+                            <span class="tag">Windows API</span>
+                        </div>
+                        <span class="pr-type">Console game</span>
+                        <a href="https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Tic-Tac-Toe source on GitHub">GitHub ↗</a>
+                    </article>
 
-                        <div class="project-card">
-                            <div class="project-image dsa-gradient">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="project-content">
-                                <div class="project-meta">
-                                    <span class="project-type">76% Acceptance Rate</span>
-                                    <span class="project-year">Ongoing</span>
-                                </div>
-                                <h3 class="project-title">DSA Practice Log</h3>
-                                <p class="project-description">
-                                    Systematic practice of algorithmic problems in Java. Focus on pattern recognition, 
-                                    time-space complexity analysis, and practical problem-solving.
-                                </p>
-                                <div class="project-tech">
-                                    <span class="tech-tag java">Java</span>
-                                    <span class="tech-tag">68 Unique Solves</span>
-                                    <span class="tech-tag">Patterns</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" class="project-link primary">
-                                        <i class="fas fa-external-link-alt"></i> LeetCode Profile
-                                    </a>
-                                    <a href="https://github.com/Mikky-mlh/DSA-in-Java" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i> Repository
-                                    </a>
-                                </div>
-                            </div>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">07</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Web development projects</strong>
+                            <span class="pr-sub">freeCodeCamp certified, 5 portfolio pieces, fully responsive</span>
                         </div>
-                    </div>
+                        <div class="pr-stack">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <span class="pr-type">Web collection</span>
+                        <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects live demo">Live ↗</a>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">08</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">DSA practice log</strong>
+                            <span class="pr-sub">68 unique solves, 76% acceptance, Striver A2Z curriculum — ongoing</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">Java</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <span class="pr-type">Ongoing</span>
+                        <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="LeetCode profile">LeetCode ↗</a>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- ═══════════════ SKILLS ═══════════════ -->
         <section id="skills" class="section skills-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Technical Arsenal</span>
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <p class="section-subtitle">Tools and technologies I use to build production-ready software</p>
+            <div class="section-inner">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-num" aria-hidden="true">03</span>
+                    <h2 class="section-heading">Stack &amp; tools</h2>
                 </div>
-                
-                <div class="skills-icons">
-                    <div class="skill-icon java" data-tooltip="Java">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <div class="skill-icon python" data-tooltip="Python">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="skill-icon" data-tooltip="C++">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="skill-icon html5" data-tooltip="HTML5">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="skill-icon css3" data-tooltip="CSS3">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="skill-icon js" data-tooltip="JavaScript">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="skill-icon react" data-tooltip="React">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <div class="skill-icon git" data-tooltip="Git">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="skill-icon linux" data-tooltip="Linux">
-                        <i class="fab fa-linux"></i>
-                    </div>
-                    <div class="skill-icon vscode" data-tooltip="VS Code">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                </div>
-                
-                <div class="skills-categories">
-                    <div class="category">
-                        <div class="category-header">
-                            <i class="fas fa-star"></i>
-                            <h3>Proficient</h3>
-                        </div>
+
+                <div class="skills-cols">
+                    <div class="skills-col" data-animate="fade-up" data-delay="1">
+                        <h3 class="skills-col-title">Proficient</h3>
                         <ul class="skills-list">
-                            <li><strong>Java:</strong> Built standalone executables with bundled JRE. Solved 68+ DSA problems with Collections Framework mastery.</li>
-                            <li><strong>Python:</strong> Deployed AI-powered web apps (Streamlit). Created standalone binaries via PyInstaller.</li>
-                            <li><strong>HTML/CSS:</strong> Built responsive, production-grade interfaces. freeCodeCamp certified with 5 portfolio projects.</li>
-                            <li><strong>Git:</strong> Daily commit workflow. Managed multi-contributor hackathon projects with branching and merging.</li>
+                            <li>
+                                <strong class="skill-name">Java</strong>
+                                <span class="skill-note">Standalone executables, 68+ DSA problems, Collections Framework mastery</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Python</strong>
+                                <span class="skill-note">Deployed AI web apps via Streamlit, standalone binaries via PyInstaller</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">HTML / CSS</strong>
+                                <span class="skill-note">Responsive production-grade interfaces, freeCodeCamp certified</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Git</strong>
+                                <span class="skill-note">Daily commit workflow, multi-contributor hackathon projects</span>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="category">
-                        <div class="category-header">
-                            <i class="fas fa-code-branch"></i>
-                            <h3>Familiar</h3>
-                        </div>
+                    <div class="skills-col" data-animate="fade-up" data-delay="2">
+                        <h3 class="skills-col-title">Familiar</h3>
                         <ul class="skills-list">
-                            <li><strong>JavaScript:</strong> DOM manipulation, event handling, and form validation in production projects.</li>
-                            <li><strong>C++:</strong> Console applications with Windows API for colored output and game logic.</li>
-                            <li><strong>AI Integration:</strong> Google Gemini API for intelligent recommendations and Vision OCR parsing.</li>
-                            <li><strong>Linux CLI:</strong> Package management, file operations, and basic shell scripting.</li>
+                            <li>
+                                <strong class="skill-name">JavaScript</strong>
+                                <span class="skill-note">DOM manipulation, event handling, form validation in production</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">C++</strong>
+                                <span class="skill-note">Console applications, Windows API, game logic</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Gemini API</strong>
+                                <span class="skill-note">AI integration, Vision OCR, intelligent recommendations</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Linux CLI</strong>
+                                <span class="skill-note">Package management, shell scripting, file operations</span>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="category">
-                        <div class="category-header">
-                            <i class="fas fa-seedling"></i>
-                            <h3>Learning</h3>
-                        </div>
+                    <div class="skills-col" data-animate="fade-up" data-delay="3">
+                        <h3 class="skills-col-title">Learning in 2026</h3>
                         <ul class="skills-list">
-                            <li><strong>React:</strong> Component-based architecture and state management (Q1 2026 roadmap).</li>
-                            <li><strong>Flask:</strong> REST API development and backend systems (Q2 2026 roadmap).</li>
-                            <li><strong>SQL:</strong> Database design and query optimization for full-stack applications.</li>
-                            <li><strong>Docker:</strong> Containerization for consistent deployment environments.</li>
+                            <li>
+                                <strong class="skill-name">React</strong>
+                                <span class="skill-note">Component-based architecture, state management (Q1 2026)</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Flask</strong>
+                                <span class="skill-note">REST API development, backend systems (Q2 2026)</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">SQL</strong>
+                                <span class="skill-note">Database design, query optimization for full-stack apps</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Docker</strong>
+                                <span class="skill-note">Containerization for consistent deployment environments</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Roadmap Section -->
+        <!-- ═══════════════ ROADMAP ═══════════════ -->
         <section id="roadmap" class="section roadmap-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Future Goals</span>
-                    <h2 class="section-title">Engineering Milestones</h2>
-                    <p class="section-subtitle">My roadmap for growth and development</p>
+            <div class="section-inner">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-num" aria-hidden="true">04</span>
+                    <h2 class="section-heading">Engineering milestones</h2>
                 </div>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker current">
-                            <i class="fas fa-code"></i>
+
+                <ol class="timeline" data-animate="fade-up" data-delay="1">
+                    <li class="timeline-item timeline-item--active">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="tm-dot"></span>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">Q1 2026</span>
-                            <h3>JavaScript Deep-Dive</h3>
-                            <p>Advanced DOM Manipulation, ES6+ Features, and Modern JavaScript Patterns</p>
+                            <span class="tl-date">Q1–Q2 2026 — Now</span>
+                            <h3>JavaScript deep-dive</h3>
+                            <p>Advanced DOM manipulation, ES6+ features, and modern JavaScript patterns via javascript.info. Alongside: Flask backend fundamentals.</p>
                         </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Q2 2026</span>
-                            <h3>Backend Systems</h3>
-                            <p>Flask Framework Mastery, SQL Databases, REST API Development</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <i class="fas fa-layer-group"></i>
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="tm-dot"></span>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2027</span>
-                            <h3>Full-Stack Integration</h3>
-                            <p>React Frontend, Cloud Deployment, System Design Principles</p>
+                            <span class="tl-date">2027</span>
+                            <h3>First internship</h3>
+                            <p>React frontend, SQL databases, cloud deployment basics. Target: securing a software engineering or security internship.</p>
                         </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <i class="fas fa-rocket"></i>
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="tm-dot"></span>
                         </div>
                         <div class="timeline-content">
-                            <span class="timeline-date">2028</span>
-                            <h3>High-Scale Engineering</h3>
-                            <p>Production-grade applications, Security-focused development, Industry roles</p>
+                            <span class="tl-date">May 2028</span>
+                            <h3>Full-time role secured</h3>
+                            <p>Production-grade applications, security-focused development, entry-level industry engineering position before graduation.</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <div class="timeline-marker" aria-hidden="true">
+                            <span class="tm-dot"></span>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="tl-date">May 2029</span>
+                            <h3>Graduate &amp; move out</h3>
+                            <p>B.Tech Cyber Security complete. High-scale engineering, system design, independently established.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Achievements Section -->
-        <section id="achievements" class="section achievements-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Recognition</span>
-                    <h2 class="section-title">Achievements</h2>
-                    <p class="section-subtitle">Milestones in my development journey</p>
-                </div>
-
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Hackathon Projects</h3>
-                        <p class="achievement-date">2025</p>
-                        <p class="achievement-description">Built 2 live AI-powered applications (UniSync & NeuralPlan)</p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h3>freeCodeCamp Certified</h3>
-                        <p class="achievement-date">2025</p>
-                        <p class="achievement-description">Responsive Web Design Certification</p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>68+ LeetCode Solves</h3>
-                        <p class="achievement-date">Ongoing</p>
-                        <p class="achievement-description">76% acceptance rate • Pattern-based learning</p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-box"></i>
-                        </div>
-                        <h3>Production-Ready Apps</h3>
-                        <p class="achievement-date">2025</p>
-                        <p class="achievement-description">Standalone executables with zero dependencies</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
+        <!-- ═══════════════ CONTACT ═══════════════ -->
         <section id="contact" class="section contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Let's Connect</h2>
-                    <p class="section-subtitle">Open for technical feedback, open-source collaboration, and security-focused development</p>
+            <div class="section-inner">
+                <div class="section-header" data-animate="fade-up">
+                    <span class="section-num" aria-hidden="true">05</span>
+                    <h2 class="section-heading">Let's connect</h2>
+                    <p class="section-sub">Open to technical feedback, open-source collaboration, and security-focused development opportunities.</p>
                 </div>
 
-                <div class="contact-content">
-                    <div class="contact-form-container">
-                        <form id="contact-form" class="contact-form">
+                <div class="contact-grid">
+                    <div class="contact-form-wrap" data-animate="fade-up" data-delay="1">
+                        <form id="contactForm" class="contact-form" novalidate>
                             <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder=" " required>
-                                <label for="name">Your Name</label>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required>
+                                <span class="form-error" id="nameError" role="alert"></span>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder=" " required>
-                                <label for="email">Your Email</label>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
+                                <span class="form-error" id="emailError" role="alert"></span>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" id="subject" name="subject" placeholder=" " required>
                                 <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="form-error" id="subjectError" role="alert"></span>
                             </div>
 
                             <div class="form-group">
-                                <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
-                                <label for="message">Your Message</label>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="form-error" id="messageError" role="alert"></span>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-full">
-                                <i class="fas fa-paper-plane"></i> Send Message
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send message <span class="btn-arrow">→</span>
                             </button>
                         </form>
 
-                        <!-- Thank You Page (Hidden by default) -->
-                        <div id="thank-you-page" class="thank-you-page" style="display: none;">
-                            <div class="thank-you-content">
-                                <div class="thank-you-icon">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <h2>Thank You!</h2>
-                                <p>Your message has been sent successfully. I'll get back to you as soon as possible!</p>
-                                <button id="back-to-contact" class="btn btn-primary">
-                                    <i class="fas fa-arrow-left"></i> Back to Form
-                                </button>
-                            </div>
+                        <div class="thank-you" id="thankYou" hidden>
+                            <span class="ty-icon" aria-hidden="true">✓</span>
+                            <h3>Message sent</h3>
+                            <p>Your message has been forwarded. I'll get back to you soon.</p>
+                            <button class="btn btn-outline" id="backToForm">Send another →</button>
                         </div>
                     </div>
 
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Email</h4>
-                                    <a href="mailto:yuvrajsarathe07@gmail.com">yuvrajsarathe07@gmail.com</a>
-                                </div>
-                            </div>
+                    <aside class="contact-sidebar" data-animate="fade-up" data-delay="2">
+                        <nav class="contact-links" aria-label="Social links">
+                            <a href="mailto:yuvrajsarathe07@gmail.com" class="contact-link">
+                                <span class="cl-label">Email</span>
+                                <span class="cl-val">yuvrajsarathe07@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/Mikky-mlh" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="cl-label">GitHub</span>
+                                <span class="cl-val">Mikky-mlh ↗</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="cl-label">LinkedIn</span>
+                                <span class="cl-val">yuvraj-sarathe ↗</span>
+                            </a>
+                            <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                                <span class="cl-label">LeetCode</span>
+                                <span class="cl-val">Mikky_mlh ↗</span>
+                            </a>
+                        </nav>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>GitHub</h4>
-                                    <a href="https://github.com/Mikky-mlh" target="_blank">github.com/Mikky-mlh</a>
-                                </div>
-                            </div>
+                        <blockquote class="contact-quote">
+                            <p>"Quality is not an act, it is a habit."</p>
+                            <cite>— Aristotle</cite>
+                        </blockquote>
 
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank">linkedin.com/in/yuvraj-sarathe</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>LeetCode</h4>
-                                    <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank">leetcode.com/u/Mikky_mlh</a>
-                                </div>
-                            </div>
+                        <div class="contact-loc">
+                            <span class="mono">Bhopal, Madhya Pradesh, India</span>
+                            <span class="loc-note">Available for remote work</span>
                         </div>
-
-                        <div class="contact-quote">
-                            <blockquote>
-                                "Quality is not an act, it is a habit."
-                            </blockquote>
-                        </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-brand">
-                        <h3><span class="brand-icon">⚡</span> Yuvraj Sarathe</h3>
-                        <p>Production-First Developer</p>
-                        <p class="footer-location">Bhopal, Madhya Pradesh, India</p>
-                        <div class="footer-social">
-                            <a href="https://github.com/Mikky-mlh" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" aria-label="LeetCode">
-                                <i class="fas fa-code"></i>
-                            </a>
-                            <a href="mailto:yuvrajsarathe07@gmail.com" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4>Projects</h4>
-                        <a href="https://unisync.streamlit.app/" target="_blank">UniSync (Live)</a>
-                        <a href="https://neuralplan.streamlit.app/" target="_blank">NeuralPlan (Live)</a>
-                        <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank">Hangman (Java)</a>
-                        <a href="https://github.com/Mikky-mlh/Connect4-in-Python" target="_blank">Connect Four (Python)</a>
-                        <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank">Web Projects</a>
-                    </div>
-                    
-                    <div class="footer-links">
-                        <h4>Navigation</h4>
-                        <a href="#about">About</a>
-                        <a href="#philosophy">Philosophy</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#roadmap">Roadmap</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Yuvraj Sarathe. Built with HTML, CSS, and a production-first approach.</p>
-                </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <strong class="footer-name">Yuvraj Sarathe</strong>
+                <span class="footer-role">Production-First Developer · Bhopal, India</span>
             </div>
-        </footer>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <span class="footer-copy mono">© 2025</span>
+        </div>
+    </footer>
 
-        <!-- Back to Top -->
-        <a href="#about" class="back-to-top" aria-label="Back to top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
+    <!-- Back to top -->
+    <a href="#hero" class="back-top" id="backTop" aria-label="Back to top" hidden>↑</a>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 </html>
