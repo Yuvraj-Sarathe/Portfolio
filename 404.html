@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="obsidian">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Yuvraj Sarathe</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Yuvraj Sarathe's portfolio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:         #0e0e0e;
+            --bg-surf:    #141414;
+            --bg-card:    #1b1b1b;
+            --text-1:     #f0ebe0;
+            --text-2:     #7d7870;
+            --text-3:     #3d3a36;
+            --accent:     #e8704a;
+            --accent-dim: #7a3820;
+            --border:     #242220;
+            --font-display: 'Syne', sans-serif;
+            --font-body:    'DM Sans', sans-serif;
+            --font-mono:    'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg);
+            color: var(--text-2);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .error-code {
+            font-family: var(--font-display);
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+            letter-spacing: -0.05em;
+            margin-bottom: 24px;
+        }
+
+        .error-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-1);
+            margin-bottom: 16px;
+        }
+
+        .error-desc {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-2);
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+            transition: transform 0.18s, background 0.2s, color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(232,112,74,0.15);
+            color: var(--bg);
+        }
+
+        .home-link {
+            margin-top: 60px;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-3);
+        }
+        .home-link a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .home-link a:hover {
+            text-decoration: underline;
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-icon">🔍</div>
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page not found</h1>
+        <p class="error-desc">
+            The page you're looking for has wandered off somewhere. 
+            It might have been moved, deleted, or maybe it never existed.
+        </p>
+        <a href="/" class="btn btn-primary">← Back to portfolio</a>
+        <div class="home-link">
+            <a href="/">mikky-mlh.github.io/Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>

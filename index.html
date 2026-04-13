@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 <body>
     <!-- Skip to content for keyboard users -->
@@ -47,7 +48,7 @@
                 <a href="#about" class="nav-link" role="listitem">About</a>
                 <a href="#projects" class="nav-link" role="listitem">Projects</a>
                 <a href="#skills" class="nav-link" role="listitem">Skills</a>
-                <a href="#roadmap" class="nav-link" role="listitem">Roadmap</a>
+                <a href="#certificates" class="nav-link" role="listitem">Certificates</a>
                 <a href="#contact" class="nav-link" role="listitem">Contact</a>
             </div>
 
@@ -68,7 +69,7 @@
             <a href="#about" class="mobile-link" role="menuitem">About</a>
             <a href="#projects" class="mobile-link" role="menuitem">Projects</a>
             <a href="#skills" class="mobile-link" role="menuitem">Skills</a>
-            <a href="#roadmap" class="mobile-link" role="menuitem">Roadmap</a>
+            <a href="#certificates" class="mobile-link" role="menuitem">Certificates</a>
             <a href="#contact" class="mobile-link" role="menuitem">Contact</a>
         </div>
     </nav>
@@ -113,7 +114,7 @@
 
                 <div class="hero-stats" data-animate="fade-up" data-delay="5">
                     <div class="stat-item">
-                        <span class="stat-num">6+</span>
+                        <span class="stat-num">12+</span>
                         <span class="stat-label">Projects shipped</span>
                     </div>
                     <div class="stat-sep" aria-hidden="true"></div>
@@ -129,7 +130,7 @@
                     <div class="stat-sep" aria-hidden="true"></div>
                     <div class="stat-item">
                         <span class="stat-num">2</span>
-                        <span class="stat-label">Live AI apps</span>
+                        <span class="stat-label">Live apps</span>
                     </div>
                 </div>
 
@@ -140,15 +141,46 @@
             </div>
         </header>
 
-        <!-- ═══════════════ APPROACH ═══════════════ -->
+        <!-- ═══════════════ ABOUT ═══════════════ -->
         <section id="about" class="section approach-section">
             <div class="section-inner">
                 <div class="section-header" data-animate="fade-up">
                     <span class="section-num" aria-hidden="true">01</span>
-                    <h2 class="section-heading">The production-first difference</h2>
+                    <h2 class="section-heading">About me</h2>
                 </div>
 
-                <div class="approach-grid">
+                <div class="about-intro" data-animate="fade-up" data-delay="1">
+                    <p class="about-bio">
+                        B.Tech Cyber Security student at LNCT Bhopal with a passion for building production-ready software. 
+                        I don't just write code — I ship applications that users can actually run without dependency headaches. 
+                        From bundled Java executables to standalone Python binaries and deployed web apps, every project is 
+                        designed for immediate execution.
+                    </p>
+                </div>
+
+                <div class="education-block" data-animate="fade-up" data-delay="2">
+                    <h3 class="education-title">Education</h3>
+                    <div class="education-card">
+                        <div class="edu-main">
+                            <strong class="edu-degree">Bachelor of Technology in Cyber Security</strong>
+                            <span class="edu-school">Lakshmi Narain College of Technology (LNCT), Bhopal</span>
+                        </div>
+                        <div class="edu-meta">
+                            <span class="edu-year mono">2025 – 2029</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-main">
+                            <strong class="edu-degree">Responsive Web Design Certification</strong>
+                            <span class="edu-school">freeCodeCamp</span>
+                        </div>
+                        <div class="edu-meta">
+                            <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="edu-link">View Certificate ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="approach-grid" data-animate="fade-up" data-delay="3">
                     <div class="approach-item" data-animate="fade-up" data-delay="1">
                         <span class="approach-num" aria-hidden="true">01</span>
                         <h3>Java applications</h3>
@@ -188,7 +220,7 @@
                     <h2 class="section-heading">Featured work</h2>
                 </div>
 
-                <!-- Featured hackathon projects -->
+                <!-- Featured projects -->
                 <div class="featured-block" data-animate="fade-up" data-delay="1">
                     <p class="featured-label">Live applications</p>
                     <div class="featured-grid">
@@ -201,20 +233,19 @@
                                 <span class="fc-year">2025</span>
                             </div>
                             <div class="featured-card-body">
-                                <span class="fc-type">Hackathon project</span>
-                                <h3 class="fc-title">UniSync</h3>
-                                <p class="fc-desc">Campus ecosystem platform with AI-powered peer matching. Connects students based on interests and academic goals using Google Gemini for intelligent recommendations.</p>
+                                <span class="fc-type">AI-powered web app</span>
+                                <h3 class="fc-title">CATMATHS</h3>
+                                <p class="fc-desc">Free web application helping students prepare for the CAT quantitative section using AI-generated tests. Deployed via Netlify and Vercel.</p>
                                 <div class="fc-tech">
-                                    <span>Streamlit</span>
-                                    <span>Gemini AI</span>
-                                    <span>Python</span>
+                                    <span>Web Tech</span>
+                                    <span>AI</span>
                                 </div>
-                                <a href="https://unisync.streamlit.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
+                                <a href="https://catmaths.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
                             </div>
                         </article>
 
                         <article class="featured-card">
-                            <div class="featured-card-top fc-top-2">
+                            <div class="featured-card-top fc-top-3">
                                 <div class="fc-live">
                                     <span class="live-dot" aria-label="Live"></span>
                                     Live
@@ -222,15 +253,15 @@
                                 <span class="fc-year">2025</span>
                             </div>
                             <div class="featured-card-body">
-                                <span class="fc-type">Hackathon project</span>
-                                <h3 class="fc-title">NeuralPlan</h3>
-                                <p class="fc-desc">AI-powered study planner with Vision OCR capabilities. Creates personalized study schedules that adapt to energy levels and learning patterns using Gemini Vision.</p>
+                                <span class="fc-type">Production web application</span>
+                                <h3 class="fc-title">OFE-PRO</h3>
+                                <p class="fc-desc">Better version of the One HTML File Challenge. Full-fledged production version with modular architecture, enhanced UX, optimized performance, and scalable state management.</p>
                                 <div class="fc-tech">
-                                    <span>Streamlit</span>
-                                    <span>Vision OCR</span>
-                                    <span>Gemini AI</span>
+                                    <span>React</span>
+                                    <span>TypeScript</span>
+                                    <span>Tailwind CSS</span>
                                 </div>
-                                <a href="https://neuralplan.streamlit.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
+                                <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
                             </div>
                         </article>
                     </div>
@@ -249,12 +280,11 @@
                     <article class="project-row">
                         <span class="pr-num" aria-hidden="true">03</span>
                         <div class="pr-info">
-                            <strong class="pr-title">Hangman game</strong>
-                            <span class="pr-sub">2000+ word database, ANSI color interface, bundled JRE</span>
+                            <strong class="pr-title">Hangman in Java</strong>
+                            <span class="pr-sub">Production-ready desktop game bundled with its own JRE. Distributed as a Windows .zip executable.</span>
                         </div>
                         <div class="pr-stack">
                             <span class="tag">Java</span>
-                            <span class="tag">JAR packaging</span>
                         </div>
                         <span class="pr-type">Standalone .exe</span>
                         <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Hangman game source on GitHub">GitHub ↗</a>
@@ -263,8 +293,8 @@
                     <article class="project-row">
                         <span class="pr-num" aria-hidden="true">04</span>
                         <div class="pr-info">
-                            <strong class="pr-title">Connect Four</strong>
-                            <span class="pr-sub">O(1) win detection algorithm, Pygame graphics, NumPy board management</span>
+                            <strong class="pr-title">Adaptive Connect 4</strong>
+                            <span class="pr-sub">Fully functional Connect 4 game featuring adaptive graphics. Game logic powered by NumPy, rendered using Pygame.</span>
                         </div>
                         <div class="pr-stack">
                             <span class="tag">Python</span>
@@ -278,6 +308,72 @@
                     <article class="project-row">
                         <span class="pr-num" aria-hidden="true">05</span>
                         <div class="pr-info">
+                            <strong class="pr-title">One HTML File Challenge</strong>
+                            <span class="pr-sub">Masterclass in minimalist coding — building a functional tool entirely within a single HTML file. Focused on code density and zero external dependencies.</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <span class="pr-type">Single-file web app</span>
+                        <span class="pr-links">
+                            <a href="https://github.com/Mikky-mlh/OFE" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE source on GitHub">GitHub ↗</a>
+                            <a href="https://mikky-mlh.github.io/OFE/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE live demo">Live ↗</a>
+                        </span>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">06</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">OFE-PRO</strong>
+                            <span class="pr-sub">Full-fledged production version with modular architecture. Enhanced UX, optimized performance, and scalable state management.</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <span class="pr-type">Web application</span>
+                        <span class="pr-links">
+                            <a href="https://github.com/Mikky-mlh/OFE-PRO" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO source on GitHub">GitHub ↗</a>
+                            <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO live demo">Live ↗</a>
+                        </span>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">07</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">UniSync</strong>
+                            <span class="pr-sub">Campus ecosystem platform with AI-powered peer matching. Connects students based on interests and academic goals using Google Gemini for intelligent recommendations.</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Gemini AI</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <span class="pr-type">Hackathon project</span>
+                        <a href="https://github.com/Mikky-mlh/Unisync" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="UniSync source on GitHub">GitHub ↗</a>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">08</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">NeuralPlan</strong>
+                            <span class="pr-sub">AI-powered study planner with Vision OCR capabilities. Creates personalized study schedules that adapt to energy levels and learning patterns using Gemini Vision.</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Vision OCR</span>
+                            <span class="tag">Gemini AI</span>
+                        </div>
+                        <span class="pr-type">Hackathon project</span>
+                        <a href="https://github.com/Mikky-mlh/NeuralPlan" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="NeuralPlan source on GitHub">GitHub ↗</a>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">09</span>
+                        <div class="pr-info">
                             <strong class="pr-title">Guess the number</strong>
                             <span class="pr-sub">Tkinter GUI, input validation, smart hints, event-driven architecture</span>
                         </div>
@@ -290,7 +386,7 @@
                     </article>
 
                     <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">06</span>
+                        <span class="pr-num" aria-hidden="true">10</span>
                         <div class="pr-info">
                             <strong class="pr-title">Tic-Tac-Toe</strong>
                             <span class="pr-sub">AI opponent, 8-pattern win detection, Windows API colored console</span>
@@ -304,7 +400,7 @@
                     </article>
 
                     <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">07</span>
+                        <span class="pr-num" aria-hidden="true">11</span>
                         <div class="pr-info">
                             <strong class="pr-title">Web development projects</strong>
                             <span class="pr-sub">freeCodeCamp certified, 5 portfolio pieces, fully responsive</span>
@@ -315,11 +411,14 @@
                             <span class="tag">JavaScript</span>
                         </div>
                         <span class="pr-type">Web collection</span>
-                        <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects live demo">Live ↗</a>
+                        <span class="pr-links">
+                            <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects source on GitHub">GitHub ↗</a>
+                            <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects live demo">Live ↗</a>
+                        </span>
                     </article>
 
                     <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">08</span>
+                        <span class="pr-num" aria-hidden="true">12</span>
                         <div class="pr-info">
                             <strong class="pr-title">DSA practice log</strong>
                             <span class="pr-sub">68 unique solves, 76% acceptance, Striver A2Z curriculum — ongoing</span>
@@ -356,6 +455,14 @@
                                 <span class="skill-note">Deployed AI web apps via Streamlit, standalone binaries via PyInstaller</span>
                             </li>
                             <li>
+                                <strong class="skill-name">React + TypeScript</strong>
+                                <span class="skill-note">OFE-PRO built with component-based architecture, hooks, and Vite</span>
+                            </li>
+                            <li>
+                                <strong class="skill-name">Tailwind CSS</strong>
+                                <span class="skill-note">Utility-first styling for rapid UI development, modern glassmorphism</span>
+                            </li>
+                            <li>
                                 <strong class="skill-name">HTML / CSS</strong>
                                 <span class="skill-note">Responsive production-grade interfaces, freeCodeCamp certified</span>
                             </li>
@@ -389,15 +496,11 @@
                     </div>
 
                     <div class="skills-col" data-animate="fade-up" data-delay="3">
-                        <h3 class="skills-col-title">Learning in 2026</h3>
+                        <h3 class="skills-col-title">Expanding in 2026</h3>
                         <ul class="skills-list">
                             <li>
-                                <strong class="skill-name">React</strong>
-                                <span class="skill-note">Component-based architecture, state management (Q1 2026)</span>
-                            </li>
-                            <li>
                                 <strong class="skill-name">Flask</strong>
-                                <span class="skill-note">REST API development, backend systems (Q2 2026)</span>
+                                <span class="skill-note">REST API development, backend systems</span>
                             </li>
                             <li>
                                 <strong class="skill-name">SQL</strong>
@@ -407,65 +510,90 @@
                                 <strong class="skill-name">Docker</strong>
                                 <span class="skill-note">Containerization for consistent deployment environments</span>
                             </li>
+                            <li>
+                                <strong class="skill-name">Next.js</strong>
+                                <span class="skill-note">Full-stack React framework, server-side rendering</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ═══════════════ ROADMAP ═══════════════ -->
-        <section id="roadmap" class="section roadmap-section">
+        <!-- ═══════════════ CERTIFICATES ═══════════════ -->
+        <section id="certificates" class="section certificates-section">
             <div class="section-inner">
                 <div class="section-header" data-animate="fade-up">
                     <span class="section-num" aria-hidden="true">04</span>
-                    <h2 class="section-heading">Engineering milestones</h2>
+                    <h2 class="section-heading">Certifications</h2>
                 </div>
 
-                <ol class="timeline" data-animate="fade-up" data-delay="1">
-                    <li class="timeline-item timeline-item--active">
-                        <div class="timeline-marker" aria-hidden="true">
-                            <span class="tm-dot"></span>
+                <div class="project-list" data-animate="fade-up" data-delay="1">
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">01</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Responsive Web Design</strong>
+                            <span class="pr-sub">freeCodeCamp — HTML, CSS, Flexbox, Grid, Responsive Design Principles</span>
                         </div>
-                        <div class="timeline-content">
-                            <span class="tl-date">Q1–Q2 2026 — Now</span>
-                            <h3>JavaScript deep-dive</h3>
-                            <p>Advanced DOM manipulation, ES6+ features, and modern JavaScript patterns via javascript.info. Alongside: Flask backend fundamentals.</p>
+                        <div class="pr-stack">
+                            <span class="tag">Web Development</span>
                         </div>
-                    </li>
+                        <span class="pr-type">Certification</span>
+                        <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                    </article>
 
-                    <li class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true">
-                            <span class="tm-dot"></span>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">02</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Frontend Development</strong>
+                            <span class="pr-sub">Modern frontend technologies and best practices</span>
                         </div>
-                        <div class="timeline-content">
-                            <span class="tl-date">2027</span>
-                            <h3>First internship</h3>
-                            <p>React frontend, SQL databases, cloud deployment basics. Target: securing a software engineering or security internship.</p>
+                        <div class="pr-stack">
+                            <span class="tag">Frontend</span>
                         </div>
-                    </li>
+                        <span class="pr-type">Certification</span>
+                        <a href="My Files/Certificates/Frontend.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                    </article>
 
-                    <li class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true">
-                            <span class="tm-dot"></span>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">03</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Hackvento 2k26</strong>
+                            <span class="pr-sub">Hackathon participation certificate</span>
                         </div>
-                        <div class="timeline-content">
-                            <span class="tl-date">May 2028</span>
-                            <h3>Full-time role secured</h3>
-                            <p>Production-grade applications, security-focused development, entry-level industry engineering position before graduation.</p>
+                        <div class="pr-stack">
+                            <span class="tag">Hackathon</span>
                         </div>
-                    </li>
+                        <span class="pr-type">Participation</span>
+                        <a href="My Files/Certificates/Hackvento 2k26.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                    </article>
 
-                    <li class="timeline-item">
-                        <div class="timeline-marker" aria-hidden="true">
-                            <span class="tm-dot"></span>
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">04</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Modern AI</strong>
+                            <span class="pr-sub">Artificial Intelligence and Machine Learning fundamentals</span>
                         </div>
-                        <div class="timeline-content">
-                            <span class="tl-date">May 2029</span>
-                            <h3>Graduate &amp; move out</h3>
-                            <p>B.Tech Cyber Security complete. High-scale engineering, system design, independently established.</p>
+                        <div class="pr-stack">
+                            <span class="tag">AI/ML</span>
                         </div>
-                    </li>
-                </ol>
+                        <span class="pr-type">Certification</span>
+                        <a href="My Files/Certificates/Modern AI.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                    </article>
+
+                    <article class="project-row">
+                        <span class="pr-num" aria-hidden="true">05</span>
+                        <div class="pr-info">
+                            <strong class="pr-title">Networking Fundamentals</strong>
+                            <span class="pr-sub">Computer networking concepts and protocols</span>
+                        </div>
+                        <div class="pr-stack">
+                            <span class="tag">Networking</span>
+                        </div>
+                        <span class="pr-type">Certification</span>
+                        <a href="My Files/Certificates/NetworkingCert.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -565,6 +693,7 @@
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
+                <a href="#certificates">Certificates</a>
                 <a href="#contact">Contact</a>
             </nav>
             <span class="footer-copy mono">© 2025</span>

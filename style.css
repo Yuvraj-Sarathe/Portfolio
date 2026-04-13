@@ -727,9 +727,62 @@ a, button, .theme-btn, .hamburger, .back-top { cursor: none; }
 .tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ═══════════════════════════════════════════════════════════
-   APPROACH SECTION
+   ABOUT SECTION
    ═══════════════════════════════════════════════════════════ */
 .approach-section { background: var(--bg-surf); }
+
+.about-intro {
+    max-width: 65ch;
+    margin-bottom: 48px;
+}
+.about-bio {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-2);
+}
+
+.education-block {
+    margin-bottom: 48px;
+}
+.education-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.education-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: border-color 0.2s;
+}
+.education-card:hover { border-color: var(--border-h); }
+.edu-main { display: flex; flex-direction: column; gap: 4px; }
+.edu-degree {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-1);
+}
+.edu-school {
+    font-size: 0.82rem;
+    color: var(--text-2);
+}
+.edu-meta { text-align: right; }
+.edu-year {
+    font-size: 0.8rem;
+    color: var(--text-3);
+}
+.edu-link {
+    font-size: 0.82rem;
+    font-weight: 500;
+}
 
 .approach-grid {
     display: grid;
@@ -834,6 +887,13 @@ a, button, .theme-btn, .hamburger, .back-top { cursor: none; }
 }
 [data-theme="manuscript"] .fc-top-2 {
     background: linear-gradient(135deg, #c8b0a0 0%, #b89880 100%);
+}
+
+.fc-top-3 {
+    background: linear-gradient(135deg, #3a2a5a 0%, #1a0a2a 100%);
+}
+[data-theme="manuscript"] .fc-top-3 {
+    background: linear-gradient(135deg, #d0c0c8 0%, #b8a0a8 100%);
 }
 
 .fc-live {
@@ -985,6 +1045,11 @@ a, button, .theme-btn, .hamburger, .back-top { cursor: none; }
     transition: color 0.2s;
 }
 .pr-link:hover { color: var(--accent); }
+.pr-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
 
 /* ═══════════════════════════════════════════════════════════
    SKILLS SECTION
@@ -1028,6 +1093,48 @@ a, button, .theme-btn, .hamburger, .back-top { cursor: none; }
     font-size: 0.82rem;
     color: var(--text-2);
     line-height: 1.55;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GITHUB STATS SECTION
+   ═══════════════════════════════════════════════════════════ */
+.github-section { background: var(--bg); }
+
+.github-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.github-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.github-stats-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.github-contribution {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.github-contribution-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
 /* ═══════════════════════════════════════════════════════════
