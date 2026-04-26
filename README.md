@@ -2,7 +2,7 @@
 
 # 👨💻 Yuvraj Sarathe | Portfolio
 
-[![LIVE PORTFOLIO](https://img.shields.io/badge/🌐_LIVE_SITE-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mikky-mlh.github.io/Portfolio/)
+[![LIVE PORTFOLIO](https://img.shields.io/badge/🌐_LIVE_SITE-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://Yuvraj-Sarathe.github.io/Portfolio/)
 
 **Production-Ready Software • Multi-Language Developer • Cyber Security Student**
 
@@ -69,7 +69,7 @@ Portfolio/
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvraj-sarathe)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mikky-mlh)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yuvraj-Sarathe)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yuvrajsarathe07@gmail.com)
 
 *Last Updated: December 2025*
