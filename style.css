@@ -168,7 +168,7 @@ body {
     line-height: 1.65;
     min-height: 100dvh;
     cursor: none;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition: background-color 0.4s var(--ease-move), color 0.4s var(--ease-move);
     overflow-x: hidden;
 }
 
@@ -327,6 +327,18 @@ code {
     75%  { transform: translate(14%, -2%); }
     87%  { transform: translate(2%, 18%); }
     100% { transform: translate(0, 0); }
+}
+
+/* Subtle dot-grid overlay for atmosphere */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, var(--border) 0.5px, transparent 0.5px);
+    background-size: 32px 32px;
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -531,12 +543,22 @@ code {
 .hero::before {
     content: '';
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
-    height: 50vh;
-    background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 65%);
+    width: 90vw;
+    height: 60vh;
+    background: radial-gradient(ellipse at center, var(--accent-glow) 0%, color-mix(in srgb, var(--accent) 3%, transparent) 40%, transparent 70%);
+    pointer-events: none;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10%;
+    width: 50vw;
+    height: 35vh;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 4%, transparent) 0%, transparent 65%);
     pointer-events: none;
 }
 
@@ -891,7 +913,7 @@ code {
     padding: 44px 40px;
     border: 1px solid var(--border);
     position: relative;
-    transition: border-color 0.25s, background 0.25s;
+    transition: border-color 0.25s var(--ease-move), background 0.25s var(--ease-move);
 }
 /* Remove doubled borders in the grid */
 .approach-item:nth-child(1) { border-right: none; border-bottom: none; }
@@ -952,7 +974,20 @@ code {
 /* ═══════════════════════════════════════════════════════════
    PROJECTS SECTION
    ═══════════════════════════════════════════════════════════ */
-.projects-section { background: var(--bg); }
+.projects-section {
+    background: var(--bg);
+    position: relative;
+}
+.projects-section::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    width: 60vw;
+    height: 50vh;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 3%, transparent) 0%, transparent 70%);
+    pointer-events: none;
+}
 
 /* Featured cards */
 .featured-block { margin-bottom: 60px; }
@@ -1339,7 +1374,7 @@ code {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 6px;
-    transition: border-color 0.2s, transform 0.2s;
+    transition: border-color 0.2s var(--ease-move), transform 0.2s var(--ease-move);
 }
 .timeline-item:hover .timeline-content {
     border-color: var(--border-h);
@@ -1366,7 +1401,20 @@ code {
 /* ═══════════════════════════════════════════════════════════
    CONTACT
    ═══════════════════════════════════════════════════════════ */
-.contact-section { background: var(--bg-surf); }
+.contact-section {
+    background: var(--bg-surf);
+    position: relative;
+}
+.contact-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 50vw;
+    height: 40vh;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 3%, transparent) 0%, transparent 65%);
+    pointer-events: none;
+}
 
 .contact-grid {
     display: grid;

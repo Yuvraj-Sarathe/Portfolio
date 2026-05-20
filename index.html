@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="obsidian">
+<html lang="en" data-theme="obsidian" data-od-id="root">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,134 +24,140 @@
     <link rel="stylesheet" href="style.css">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
-<body>
-    <a href="#main" class="skip-link">Skip to content</a>
+<body data-od-id="body">
+    <a href="#main" class="skip-link" data-od-id="skip-link">Skip to content</a>
 
-    <div class="cursor-dot" aria-hidden="true"></div>
-    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true" data-od-id="cursor-dot"></div>
+    <div class="cursor-ring" aria-hidden="true" data-od-id="cursor-ring"></div>
 
-    <div class="grain" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true" data-od-id="grain"></div>
 
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true" data-od-id="scroll-progress"></div>
 
-    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a href="#hero" class="nav-logo" aria-label="Go to top">YS</a>
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation" data-od-id="nav">
+        <div class="nav-inner" data-od-id="nav-inner">
+            <a href="#hero" class="nav-logo" aria-label="Go to top" data-od-id="nav-logo">YS</a>
 
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#certificates" class="nav-link">Certificates</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <div class="nav-links" data-od-id="nav-links">
+                <a href="#about" class="nav-link" data-od-id="nav-link-about">About</a>
+                <a href="#projects" class="nav-link" data-od-id="nav-link-projects">Projects</a>
+                <a href="#skills" class="nav-link" data-od-id="nav-link-skills">Skills</a>
+                <a href="#certificates" class="nav-link" data-od-id="nav-link-certificates">Certificates</a>
+                <a href="resume.pdf" class="nav-link" data-od-id="nav-link-resume" download>Resume</a>
+                <a href="#contact" class="nav-link" data-od-id="nav-link-contact">Contact</a>
             </div>
 
-            <div class="nav-actions">
-                <button class="theme-btn" id="themeToggle" aria-label="Switch color theme" title="Switch theme">
-                    <span class="theme-dot"></span>
+            <div class="nav-actions" data-od-id="nav-actions">
+                <button class="theme-btn" id="themeToggle" aria-label="Switch color theme" title="Switch theme" data-od-id="theme-toggle">
+                    <span class="theme-dot" data-od-id="theme-dot"></span>
                 </button>
-                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-                    <span class="ham-line"></span>
-                    <span class="ham-line"></span>
-                    <span class="ham-line"></span>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" data-od-id="hamburger">
+                    <span class="ham-line" data-od-id="ham-line-1"></span>
+                    <span class="ham-line" data-od-id="ham-line-2"></span>
+                    <span class="ham-line" data-od-id="ham-line-3"></span>
                 </button>
             </div>
         </div>
 
-        <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
-            <nav class="mobile-links">
-                <a href="#about" class="mobile-link" role="menuitem" style="--i:0">About</a>
-                <a href="#projects" class="mobile-link" role="menuitem" style="--i:1">Projects</a>
-                <a href="#skills" class="mobile-link" role="menuitem" style="--i:2">Skills</a>
-                <a href="#certificates" class="mobile-link" role="menuitem" style="--i:3">Certificates</a>
-                <a href="#contact" class="mobile-link" role="menuitem" style="--i:4">Contact</a>
+        <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true" data-od-id="mobile-overlay">
+            <nav class="mobile-links" data-od-id="mobile-links">
+                <a href="#about" class="mobile-link" role="menuitem" style="--i:0" data-od-id="mobile-link-about">About</a>
+                <a href="#projects" class="mobile-link" role="menuitem" style="--i:1" data-od-id="mobile-link-projects">Projects</a>
+                <a href="#skills" class="mobile-link" role="menuitem" style="--i:2" data-od-id="mobile-link-skills">Skills</a>
+                <a href="#certificates" class="mobile-link" role="menuitem" style="--i:3" data-od-id="mobile-link-certificates">Certificates</a>
+                <a href="resume.pdf" class="mobile-link" role="menuitem" style="--i:4" data-od-id="mobile-link-resume" download>Resume</a>
+                <a href="#contact" class="mobile-link" role="menuitem" style="--i:5" data-od-id="mobile-link-contact">Contact</a>
             </nav>
         </div>
     </nav>
 
     <main id="main">
 
-        <header id="hero" class="hero">
-            <div class="hero-inner">
+        <header id="hero" class="hero" data-od-id="hero">
+            <div class="hero-inner" data-od-id="hero-inner">
 
-                <div class="hero-eyebrow" data-reveal="fade-up">
-                    <span class="status-pulse" aria-label="Currently available"></span>
-                    <span class="status-text">Available for internships &amp; collaborations</span>
-                    <span class="hero-meta">
-                        <span>B.Tech Cyber Security</span>
-                        <span class="dot-sep" aria-hidden="true">·</span>
-                        <span>LNCT Bhopal</span>
-                        <span class="dot-sep" aria-hidden="true">·</span>
-                        <span class="mono">2025–2029</span>
+                <div class="hero-eyebrow" data-reveal="fade-up" data-od-id="hero-eyebrow">
+                    <span class="status-pulse" aria-label="Currently available" data-od-id="status-pulse"></span>
+                    <span class="status-text" data-od-id="status-text">Available for internships &amp; collaborations</span>
+                    <span class="hero-meta" data-od-id="hero-meta">
+                        <span data-od-id="hero-meta-degree">B.Tech Cyber Security</span>
+                        <span class="dot-sep" aria-hidden="true" data-od-id="dot-sep-1">·</span>
+                        <span data-od-id="hero-meta-college">LNCT Bhopal</span>
+                        <span class="dot-sep" aria-hidden="true" data-od-id="dot-sep-2">·</span>
+                        <span class="mono" data-od-id="hero-meta-years">2025–2029</span>
                     </span>
                 </div>
 
-                <h1 class="hero-name" aria-label="Yuvraj Sarathe">
-                    <span class="hero-name-line" data-reveal="slide-up" data-delay="1">Yuvraj</span>
-                    <span class="hero-name-line hero-name-accent" data-reveal="slide-up" data-delay="2">Sarathe</span>
+                <h1 class="hero-name" aria-label="Yuvraj Sarathe" data-od-id="hero-name">
+                    <span class="hero-name-line" data-reveal="slide-up" data-delay="1" data-od-id="hero-name-first">Yuvraj</span>
+                    <span class="hero-name-line hero-name-accent" data-reveal="slide-up" data-delay="2" data-od-id="hero-name-last">Sarathe</span>
                 </h1>
 
-                <div class="hero-rule" data-reveal="expand" data-delay="3" aria-hidden="true"></div>
+                <div class="hero-rule" data-reveal="expand" data-delay="3" aria-hidden="true" data-od-id="hero-rule"></div>
 
-                <div class="hero-bottom" data-reveal="fade-up" data-delay="4">
-                    <p class="hero-role">Production-First Developer</p>
-                    <p class="hero-desc">
+                <div class="hero-bottom" data-reveal="fade-up" data-delay="4" data-od-id="hero-bottom">
+                    <p class="hero-role" data-od-id="hero-role">Production-First Developer</p>
+                    <p class="hero-desc" data-od-id="hero-desc">
                         Most developers write fragile scripts that only work in their own local text editors. I ship resilient, complete software applications. From automated open-source operations infrastructure to pre-compiled standalone executables, my work runs instantly right out of the box with zero system setup or installation pain.
                     </p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View projects</span>
-                            <span class="btn-icon">→</span>
+                    <div class="hero-cta" data-od-id="hero-cta">
+                        <a href="#projects" class="btn btn-primary" data-od-id="btn-view-projects">
+                            <span data-od-id="btn-view-projects-text">View projects</span>
+                            <span class="btn-icon" data-od-id="btn-view-projects-icon">→</span>
                         </a>
-                        <a href="https://github.com/Yuvraj-Sarathe" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                            <span>GitHub</span>
-                            <span class="btn-icon">↗</span>
+                        <a href="https://github.com/Yuvraj-Sarathe" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-od-id="btn-github">
+                            <span data-od-id="btn-github-text">GitHub</span>
+                            <span class="btn-icon" data-od-id="btn-github-icon">↗</span>
                         </a>
-                        <a href="#contact" class="btn btn-text">
-                            <span>Get in touch</span>
-                            <span class="btn-icon">→</span>
+                        <a href="resume.pdf" class="btn btn-outline" data-od-id="btn-download-cv" download>
+                            <span data-od-id="btn-download-cv-text">Download CV</span>
+                            <span class="btn-icon" data-od-id="btn-download-cv-icon">↓</span>
+                        </a>
+                        <a href="#contact" class="btn btn-text" data-od-id="btn-get-in-touch">
+                            <span data-od-id="btn-get-in-touch-text">Get in touch</span>
+                            <span class="btn-icon" data-od-id="btn-get-in-touch-icon">→</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-stats" data-reveal="fade-up" data-delay="5">
-                    <div class="stat-item">
-                        <span class="stat-num">14+</span>
-                        <span class="stat-label">Projects shipped</span>
+                <div class="hero-stats" data-reveal="fade-up" data-delay="5" data-od-id="hero-stats">
+                    <div class="stat-item" data-od-id="stat-projects">
+                        <span class="stat-num" data-od-id="stat-projects-num">14+</span>
+                        <span class="stat-label" data-od-id="stat-projects-label">Projects shipped</span>
                     </div>
-                    <div class="stat-sep" aria-hidden="true"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">OSS</span>
-                        <span class="stat-label">Code Owner</span>
+                    <div class="stat-sep" aria-hidden="true" data-od-id="stat-sep-1"></div>
+                    <div class="stat-item" data-od-id="stat-oss">
+                        <span class="stat-num" data-od-id="stat-oss-num">OSS</span>
+                        <span class="stat-label" data-od-id="stat-oss-label">Code Owner</span>
                     </div>
-                    <div class="stat-sep" aria-hidden="true"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">76%</span>
-                        <span class="stat-label">LeetCode acceptance</span>
+                    <div class="stat-sep" aria-hidden="true" data-od-id="stat-sep-2"></div>
+                    <div class="stat-item" data-od-id="stat-leetcode">
+                        <span class="stat-num" data-od-id="stat-leetcode-num">76%</span>
+                        <span class="stat-label" data-od-id="stat-leetcode-label">LeetCode acceptance</span>
                     </div>
-                    <div class="stat-sep" aria-hidden="true"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">7</span>
-                        <span class="stat-label">Live production apps</span>
+                    <div class="stat-sep" aria-hidden="true" data-od-id="stat-sep-3"></div>
+                    <div class="stat-item" data-od-id="stat-apps">
+                        <span class="stat-num" data-od-id="stat-apps-num">7</span>
+                        <span class="stat-label" data-od-id="stat-apps-label">Live production apps</span>
                     </div>
                 </div>
 
             </div>
-            <div class="hero-scroll-hint" aria-hidden="true">
-                <span class="scroll-hint-line"></span>
-                <span class="scroll-hint-text">scroll</span>
+            <div class="hero-scroll-hint" aria-hidden="true" data-od-id="hero-scroll-hint">
+                <span class="scroll-hint-line" data-od-id="scroll-hint-line"></span>
+                <span class="scroll-hint-text" data-od-id="scroll-hint-text">scroll</span>
             </div>
         </header>
 
-        <section id="about" class="section approach-section">
-            <div class="section-inner">
-                <div class="section-header" data-reveal="fade-up">
-                    <span class="section-num" aria-hidden="true">01</span>
-                    <h2 class="section-heading">About me</h2>
+        <section id="about" class="section approach-section" data-od-id="section-about">
+            <div class="section-inner" data-od-id="about-inner">
+                <div class="section-header" data-reveal="fade-up" data-od-id="about-header">
+                    <span class="section-num" aria-hidden="true" data-od-id="about-section-num">01</span>
+                    <h2 class="section-heading" data-od-id="about-heading">About me</h2>
                 </div>
 
-                <div class="about-intro" data-reveal="fade-up" data-delay="1">
-                    <p class="about-bio">
+                <div class="about-intro" data-reveal="fade-up" data-delay="1" data-od-id="about-intro">
+                    <p class="about-bio" data-od-id="about-bio">
                         B.Tech Cyber Security student at LNCT Bhopal with an intense obsession for engineering production-ready software systems. 
                         I despise dependency hell and configuration friction. Whether managing core release workflows for open-source organizations, 
                         bundling isolated runtimes for zero-friction desktop applications, or architecting secure client-side search tools, 
@@ -159,171 +165,171 @@
                     </p>
                 </div>
 
-                <div class="education-block" data-reveal="fade-up" data-delay="2">
-                    <h3 class="education-title">Education</h3>
-                    <div class="education-card">
-                        <div class="edu-main">
-                            <strong class="edu-degree">Bachelor of Technology in Cyber Security</strong>
-                            <span class="edu-school">Lakshmi Narain College of Technology (LNCT), Bhopal</span>
+                <div class="education-block" data-reveal="fade-up" data-delay="2" data-od-id="education-block">
+                    <h3 class="education-title" data-od-id="education-title">Education</h3>
+                    <div class="education-card" data-od-id="education-card-btech">
+                        <div class="edu-main" data-od-id="edu-btech-main">
+                            <strong class="edu-degree" data-od-id="edu-btech-degree">Bachelor of Technology in Cyber Security</strong>
+                            <span class="edu-school" data-od-id="edu-btech-school">Lakshmi Narain College of Technology (LNCT), Bhopal</span>
                         </div>
-                        <div class="edu-meta">
-                            <span class="edu-year mono">2025 – 2029</span>
+                        <div class="edu-meta" data-od-id="edu-btech-meta">
+                            <span class="edu-year mono" data-od-id="edu-btech-year">2025 – 2029</span>
                         </div>
                     </div>
-                    <div class="education-card">
-                        <div class="edu-main">
-                            <strong class="edu-degree">Responsive Web Design Certification</strong>
-                            <span class="edu-school">freeCodeCamp</span>
+                    <div class="education-card" data-od-id="education-card-fcc">
+                        <div class="edu-main" data-od-id="edu-fcc-main">
+                            <strong class="edu-degree" data-od-id="edu-fcc-degree">Responsive Web Design Certification</strong>
+                            <span class="edu-school" data-od-id="edu-fcc-school">freeCodeCamp</span>
                         </div>
-                        <div class="edu-meta">
-                            <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="edu-link">View Certificate ↗</a>
+                        <div class="edu-meta" data-od-id="edu-fcc-meta">
+                            <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="edu-link" data-od-id="edu-fcc-link">View Certificate ↗</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="approach-grid" data-reveal="fade-up" data-delay="3">
-                    <div class="approach-item" data-reveal="fade-up" data-delay="1">
-                        <span class="approach-num" aria-hidden="true">01</span>
-                        <h3>Infrastructure automation</h3>
-                        <p>Designing modern CI/CD (Continuous Integration and Continuous Deployment — automated tracking scripts that build, test, and release code instantly when changes are pushed) systems to handle automated versioning, sync release tags, and strictly maintain accurate production history logs.</p>
-                        <span class="approach-tag">Zero manual friction</span>
+                <div class="approach-grid" data-reveal="fade-up" data-delay="3" data-od-id="approach-grid">
+                    <div class="approach-item" data-reveal="fade-up" data-delay="1" data-od-id="approach-item-1">
+                        <span class="approach-num" aria-hidden="true" data-od-id="approach-num-1">01</span>
+                        <h3 data-od-id="approach-heading-1">Infrastructure automation</h3>
+                        <p data-od-id="approach-desc-1">Designing modern CI/CD (Continuous Integration and Continuous Deployment — automated tracking scripts that build, test, and release code instantly when changes are pushed) systems to handle automated versioning, sync release tags, and strictly maintain accurate production history logs.</p>
+                        <span class="approach-tag" data-od-id="approach-tag-1">Zero manual friction</span>
                     </div>
 
-                    <div class="approach-item" data-reveal="fade-up" data-delay="2">
-                        <span class="approach-num" aria-hidden="true">02</span>
-                        <h3>Independent execution</h3>
-                        <p>Compiling applications into standalone pre-packaged binaries or bundling dedicated execution runtimes. Users execute the application directly without installing platform-specific developer compilers or runtimes on their machines.</p>
-                        <span class="approach-tag">No local requirements</span>
+                    <div class="approach-item" data-reveal="fade-up" data-delay="2" data-od-id="approach-item-2">
+                        <span class="approach-num" aria-hidden="true" data-od-id="approach-num-2">02</span>
+                        <h3 data-od-id="approach-heading-2">Independent execution</h3>
+                        <p data-od-id="approach-desc-2">Compiling applications into standalone pre-packaged binaries or bundling dedicated execution runtimes. Users execute the application directly without installing platform-specific developer compilers or runtimes on their machines.</p>
+                        <span class="approach-tag" data-od-id="approach-tag-2">No local requirements</span>
                     </div>
 
-                    <div class="approach-item" data-reveal="fade-up" data-delay="3">
-                        <span class="approach-num" aria-hidden="true">03</span>
-                        <h3>Security from day one</h3>
-                        <p>Input validation (checking that user data is structurally safe and clean before running it) and error exception interception are baked natively into the codebase foundations. I prevent runtime crashes and standard technical vulnerabilities before they can appear.</p>
-                        <span class="approach-tag">Secure by design</span>
+                    <div class="approach-item" data-reveal="fade-up" data-delay="3" data-od-id="approach-item-3">
+                        <span class="approach-num" aria-hidden="true" data-od-id="approach-num-3">03</span>
+                        <h3 data-od-id="approach-heading-3">Security from day one</h3>
+                        <p data-od-id="approach-desc-3">Input validation (checking that user data is structurally safe and clean before running it) and error exception interception are baked natively into the codebase foundations. I prevent runtime crashes and standard technical vulnerabilities before they can appear.</p>
+                        <span class="approach-tag" data-od-id="approach-tag-3">Secure by design</span>
                     </div>
 
-                    <div class="approach-item" data-reveal="fade-up" data-delay="4">
-                        <span class="approach-num" aria-hidden="true">04</span>
-                        <h3>Pattern-based learning</h3>
-                        <p>DSA (Data Structures and Algorithms — the specific structural ways we organize, track, and manipulate data to solve logic problems quickly) mastered through systematic core structural pattern recognition rather than shallow memorization blocks. Following the Striver A2Z curriculum map.</p>
-                        <span class="approach-tag">Efficiency obsessed</span>
+                    <div class="approach-item" data-reveal="fade-up" data-delay="4" data-od-id="approach-item-4">
+                        <span class="approach-num" aria-hidden="true" data-od-id="approach-num-4">04</span>
+                        <h3 data-od-id="approach-heading-4">Pattern-based learning</h3>
+                        <p data-od-id="approach-desc-4">DSA (Data Structures and Algorithms — the specific structural ways we organize, track, and manipulate data to solve logic problems quickly) mastered through systematic core structural pattern recognition rather than shallow memorization blocks. Following the Striver A2Z curriculum map.</p>
+                        <span class="approach-tag" data-od-id="approach-tag-4">Efficiency obsessed</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section projects-section">
-            <div class="section-inner">
-                <div class="section-header" data-reveal="fade-up">
-                    <span class="section-num" aria-hidden="true">02</span>
-                    <h2 class="section-heading">Featured work</h2>
+        <section id="projects" class="section projects-section" data-od-id="section-projects">
+            <div class="section-inner" data-od-id="projects-inner">
+                <div class="section-header" data-reveal="fade-up" data-od-id="projects-header">
+                    <span class="section-num" aria-hidden="true" data-od-id="projects-section-num">02</span>
+                    <h2 class="section-heading" data-od-id="projects-heading">Featured work</h2>
                 </div>
 
-                <div class="featured-block" data-reveal="fade-up" data-delay="1">
-                    <p class="featured-label">Live applications &amp; production systems</p>
-                    <div class="featured-grid">
-                        <article class="card-shell">
-                            <div class="card-core">
-                            <div class="featured-card">
-                            <div class="featured-card-top fc-top-gitdeep">
-                                <div class="fc-live" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.4);">
-                                    <span class="live-dot" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;" aria-label="Production"></span>
+                <div class="featured-block" data-reveal="fade-up" data-delay="1" data-od-id="featured-block">
+                    <p class="featured-label" data-od-id="featured-label">Live applications &amp; production systems</p>
+                    <div class="featured-grid" data-od-id="featured-grid">
+                        <article class="card-shell" data-od-id="card-kdm">
+                            <div class="card-core" data-od-id="card-kdm-core">
+                            <div class="featured-card" data-od-id="featured-card-kdm">
+                            <div class="featured-card-top fc-top-gitdeep" data-od-id="fc-top-kdm">
+                                <div class="fc-live" style="background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: 1px solid rgba(14, 165, 233, 0.4);" data-od-id="fc-live-kdm">
+                                    <span class="live-dot" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;" aria-label="Production" data-od-id="live-dot-kdm"></span>
                                     Core System
                                 </div>
-                                <span class="fc-year">2026</span>
+                                <span class="fc-year" data-od-id="fc-year-kdm">2026</span>
                             </div>
-                            <div class="featured-card-body">
-                                <span class="fc-type">Open Source · Code Owner</span>
-                                <h3 class="fc-title">KDM-CLI</h3>
-                                <p class="fc-desc">Lightweight, terminal-based monitoring tool that actively tracks Kubernetes pods and Docker containers. I joined the organization, took command as Code Owner, and engineered automated CI/CD release workflows that seamlessly handle tag alignment and automatically generate comprehensive changelog versions across every software deployment phase.</p>
-                                <div class="fc-tech">
-                                    <span>Node.js</span>
-                                    <span>Docker</span>
-                                    <span>Kubernetes</span>
-                                    <span>GitHub Actions</span>
+                            <div class="featured-card-body" data-od-id="fc-body-kdm">
+                                <span class="fc-type" data-od-id="fc-type-kdm">Open Source · Code Owner</span>
+                                <h3 class="fc-title" data-od-id="fc-title-kdm">KDM-CLI</h3>
+                                <p class="fc-desc" data-od-id="fc-desc-kdm">Lightweight, terminal-based monitoring tool that actively tracks Kubernetes pods and Docker containers. I joined the organization, took command as Code Owner, and engineered automated CI/CD release workflows that seamlessly handle tag alignment and automatically generate comprehensive changelog versions across every software deployment phase.</p>
+                                <div class="fc-tech" data-od-id="fc-tech-kdm">
+                                    <span data-od-id="fc-tech-kdm-1">Node.js</span>
+                                    <span data-od-id="fc-tech-kdm-2">Docker</span>
+                                    <span data-od-id="fc-tech-kdm-3">Kubernetes</span>
+                                    <span data-od-id="fc-tech-kdm-4">GitHub Actions</span>
                                 </div>
-                                <div class="fc-links-group" style="display: flex; gap: 1rem; margin-top: auto;">
-                                    <a href="https://kdmcli.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Website ↗</a>
-                                    <a href="https://github.com/KDM-cli/kdm-cli" target="_blank" rel="noopener noreferrer" class="fc-link" style="color: var(--text-muted);">Source &amp; Contributions ↗</a>
+                                <div class="fc-links-group" style="display: flex; gap: 1rem; margin-top: auto;" data-od-id="fc-links-kdm">
+                                    <a href="https://kdmcli.app/" target="_blank" rel="noopener noreferrer" class="fc-link" data-od-id="fc-link-kdm-site">Website ↗</a>
+                                    <a href="https://github.com/KDM-cli/kdm-cli" target="_blank" rel="noopener noreferrer" class="fc-link" style="color: var(--text-muted);" data-od-id="fc-link-kdm-source">Source &amp; Contributions ↗</a>
                                 </div>
                             </div>
                             </div>
                         </div>
                         </article>
 
-                        <article class="card-shell">
-                            <div class="card-core">
-                            <div class="featured-card">
-                            <div class="featured-card-top fc-top-gitdeep">
-                                <div class="fc-live">
-                                    <span class="live-dot" aria-label="Live"></span>
+                        <article class="card-shell" data-od-id="card-gitdeep">
+                            <div class="card-core" data-od-id="card-gitdeep-core">
+                            <div class="featured-card" data-od-id="featured-card-gitdeep">
+                            <div class="featured-card-top fc-top-gitdeep" data-od-id="fc-top-gitdeep">
+                                <div class="fc-live" data-od-id="fc-live-gitdeep">
+                                    <span class="live-dot" aria-label="Live" data-od-id="live-dot-gitdeep"></span>
                                     Live
                                 </div>
-                                <span class="fc-year">2025</span>
+                                <span class="fc-year" data-od-id="fc-year-gitdeep">2025</span>
                             </div>
-                            <div class="featured-card-body">
-                                <span class="fc-type">AI-powered developer tool</span>
-                                <h3 class="fc-title">GitDeep</h3>
-                                <p class="fc-desc">Brutally honest AI assessments of any GitHub profile. Hirability scores, SWOT analysis, career slope detection, buzzword vs reality check, per-repo scoring, and candidate comparison. 12 AI providers. Zero data storage.</p>
-                                <div class="fc-tech">
-                                    <span>Next.js 15</span>
-                                    <span>TypeScript</span>
-                                    <span>Tailwind v4</span>
-                                    <span>Recharts</span>
+                            <div class="featured-card-body" data-od-id="fc-body-gitdeep">
+                                <span class="fc-type" data-od-id="fc-type-gitdeep">AI-powered developer tool</span>
+                                <h3 class="fc-title" data-od-id="fc-title-gitdeep">GitDeep</h3>
+                                <p class="fc-desc" data-od-id="fc-desc-gitdeep">Brutally honest AI assessments of any GitHub profile. Hirability scores, SWOT analysis, career slope detection, buzzword vs reality check, per-repo scoring, and candidate comparison. 12 AI providers. Zero data storage.</p>
+                                <div class="fc-tech" data-od-id="fc-tech-gitdeep">
+                                    <span data-od-id="fc-tech-gitdeep-1">Next.js 15</span>
+                                    <span data-od-id="fc-tech-gitdeep-2">TypeScript</span>
+                                    <span data-od-id="fc-tech-gitdeep-3">Tailwind v4</span>
+                                    <span data-od-id="fc-tech-gitdeep-4">Recharts</span>
                                 </div>
-                                <a href="https://gitdeep.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
+                                <a href="https://gitdeep.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link" data-od-id="fc-link-gitdeep">Open live demo ↗</a>
                             </div>
                             </div>
                         </div>
                         </article>
 
-                        <article class="card-shell">
-                            <div class="card-core">
-                            <div class="featured-card">
-                            <div class="featured-card-top fc-top-gitissue">
-                                <div class="fc-live">
-                                    <span class="live-dot" aria-label="Live"></span>
+                        <article class="card-shell" data-od-id="card-gitissue">
+                            <div class="card-core" data-od-id="card-gitissue-core">
+                            <div class="featured-card" data-od-id="featured-card-gitissue">
+                            <div class="featured-card-top fc-top-gitissue" data-od-id="fc-top-gitissue">
+                                <div class="fc-live" data-od-id="fc-live-gitissue">
+                                    <span class="live-dot" aria-label="Live" data-od-id="live-dot-gitissue"></span>
                                     Live
                                 </div>
-                                <span class="fc-year">2026</span>
+                                <span class="fc-year" data-od-id="fc-year-gitissue">2026</span>
                             </div>
-                            <div class="featured-card-body">
-                                <span class="fc-type">Global Issue Explorer</span>
-                                <h3 class="fc-title">GitIssue</h3>
-                                <p class="fc-desc">Cross-repo GitHub issue search. Browse, filter, and sort issues across all of GitHub with label tracking, language filters, and customizable views — entirely client-side.</p>
-                                <div class="fc-tech">
-                                    <span>Next.js</span>
-                                    <span>TypeScript</span>
-                                    <span>Tailwind</span>
-                                    <span>GitHub API</span>
+                            <div class="featured-card-body" data-od-id="fc-body-gitissue">
+                                <span class="fc-type" data-od-id="fc-type-gitissue">Global Issue Explorer</span>
+                                <h3 class="fc-title" data-od-id="fc-title-gitissue">GitIssue</h3>
+                                <p class="fc-desc" data-od-id="fc-desc-gitissue">Cross-repo GitHub issue search. Browse, filter, and sort issues across all of GitHub with label tracking, language filters, and customizable views — entirely client-side.</p>
+                                <div class="fc-tech" data-od-id="fc-tech-gitissue">
+                                    <span data-od-id="fc-tech-gitissue-1">Next.js</span>
+                                    <span data-od-id="fc-tech-gitissue-2">TypeScript</span>
+                                    <span data-od-id="fc-tech-gitissue-3">Tailwind</span>
+                                    <span data-od-id="fc-tech-gitissue-4">GitHub API</span>
                                 </div>
-                                <a href="https://gitissue.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
+                                <a href="https://gitissue.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link" data-od-id="fc-link-gitissue">Open live demo ↗</a>
                             </div>
                             </div>
                         </div>
                         </article>
 
-                        <article class="card-shell">
-                            <div class="card-core">
-                            <div class="featured-card">
-                            <div class="featured-card-top fc-top-3">
-                                <div class="fc-live">
-                                    <span class="live-dot" aria-label="Live"></span>
+                        <article class="card-shell" data-od-id="card-ofe">
+                            <div class="card-core" data-od-id="card-ofe-core">
+                            <div class="featured-card" data-od-id="featured-card-ofe">
+                            <div class="featured-card-top fc-top-3" data-od-id="fc-top-ofe">
+                                <div class="fc-live" data-od-id="fc-live-ofe">
+                                    <span class="live-dot" aria-label="Live" data-od-id="live-dot-ofe"></span>
                                     Live
                                 </div>
-                                <span class="fc-year">2025</span>
+                                <span class="fc-year" data-od-id="fc-year-ofe">2025</span>
                             </div>
-                            <div class="featured-card-body">
-                                <span class="fc-type">Production web application</span>
-                                <h3 class="fc-title">OFE-PRO</h3>
-                                <p class="fc-desc">Better version of the One HTML File Challenge. Full-fledged production version with modular architecture, enhanced UX, optimized performance, and scalable state management.</p>
-                                <div class="fc-tech">
-                                    <span>React</span>
-                                    <span>TypeScript</span>
-                                    <span>Tailwind CSS</span>
+                            <div class="featured-card-body" data-od-id="fc-body-ofe">
+                                <span class="fc-type" data-od-id="fc-type-ofe">Production web application</span>
+                                <h3 class="fc-title" data-od-id="fc-title-ofe">OFE-PRO</h3>
+                                <p class="fc-desc" data-od-id="fc-desc-ofe">Better version of the One HTML File Challenge. Full-fledged production version with modular architecture, enhanced UX, optimized performance, and scalable state management.</p>
+                                <div class="fc-tech" data-od-id="fc-tech-ofe">
+                                    <span data-od-id="fc-tech-ofe-1">React</span>
+                                    <span data-od-id="fc-tech-ofe-2">TypeScript</span>
+                                    <span data-od-id="fc-tech-ofe-3">Tailwind CSS</span>
                                 </div>
-                                <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link">Open live demo ↗</a>
+                                <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="fc-link" data-od-id="fc-link-ofe">Open live demo ↗</a>
                             </div>
                             </div>
                         </div>
@@ -331,318 +337,318 @@
                     </div>
                 </div>
 
-                <div class="project-list" data-reveal="fade-up" data-delay="2">
-                    <p class="featured-label">All projects</p>
-                    <div class="project-list-head" aria-hidden="true">
-                        <span>Title</span>
-                        <span>Stack</span>
-                        <span>Type</span>
-                        <span>Link</span>
+                <div class="project-list" data-reveal="fade-up" data-delay="2" data-od-id="project-list">
+                    <p class="featured-label" data-od-id="project-list-label">All projects</p>
+                    <div class="project-list-head" aria-hidden="true" data-od-id="project-list-head">
+                        <span data-od-id="plh-title">Title</span>
+                        <span data-od-id="plh-stack">Stack</span>
+                        <span data-od-id="plh-type">Type</span>
+                        <span data-od-id="plh-link">Link</span>
                     </div>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">01</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">KDM-CLI</strong>
-                            <span class="pr-sub">Core Code Owner. Real-time terminal environment monitor for Docker workloads and Kubernetes pods. Designed automated tag orchestration and release pipeline scripts.</span>
+                    <article class="project-row" data-od-id="pr-01">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-01">01</span>
+                        <div class="pr-info" data-od-id="pr-info-01">
+                            <strong class="pr-title" data-od-id="pr-title-01">KDM-CLI</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-01">Core Code Owner. Real-time terminal environment monitor for Docker workloads and Kubernetes pods. Designed automated tag orchestration and release pipeline scripts.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">K8s</span>
-                            <span class="tag">CI/CD</span>
+                        <div class="pr-stack" data-od-id="pr-stack-01">
+                            <span class="tag" data-od-id="tag-01-1">Node.js</span>
+                            <span class="tag" data-od-id="tag-01-2">K8s</span>
+                            <span class="tag" data-od-id="tag-01-3">CI/CD</span>
                         </div>
-                        <span class="pr-type">OSS Infrastructure</span>
-                        <span class="pr-links">
-                            <a href="https://kdmcli.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="KDM Live Website">Site ↗</a>
-                            <a href="https://github.com/KDM-cli/kdm-cli" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="KDM Contributions Source">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-01">OSS Infrastructure</span>
+                        <span class="pr-links" data-od-id="pr-links-01">
+                            <a href="https://kdmcli.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="KDM Live Website" data-od-id="pr-link-01-site">Site ↗</a>
+                            <a href="https://github.com/KDM-cli/kdm-cli" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="KDM Contributions Source" data-od-id="pr-link-01-source">GitHub ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">02</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">GitDeep</strong>
-                            <span class="pr-sub">AI GitHub profile analyzer — hirability scoring, SWOT, career slope, buzzword detection, 12 AI providers, zero data storage.</span>
+                    <article class="project-row" data-od-id="pr-02">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-02">02</span>
+                        <div class="pr-info" data-od-id="pr-info-02">
+                            <strong class="pr-title" data-od-id="pr-title-02">GitDeep</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-02">AI GitHub profile analyzer — hirability scoring, SWOT, career slope, buzzword detection, 12 AI providers, zero data storage.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
+                        <div class="pr-stack" data-od-id="pr-stack-02">
+                            <span class="tag" data-od-id="tag-02-1">Next.js</span>
+                            <span class="tag" data-od-id="tag-02-2">TypeScript</span>
+                            <span class="tag" data-od-id="tag-02-3">Tailwind</span>
                         </div>
-                        <span class="pr-type">Live web app</span>
-                        <span class="pr-links">
-                            <a href="https://gitdeep.vercel.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitDeep live demo">Live ↗</a>
-                            <a href="https://github.com/Yuvraj-Sarathe/GitDeep" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitDeep source">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-02">Live web app</span>
+                        <span class="pr-links" data-od-id="pr-links-02">
+                            <a href="https://gitdeep.vercel.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitDeep live demo" data-od-id="pr-link-02-live">Live ↗</a>
+                            <a href="https://github.com/Yuvraj-Sarathe/GitDeep" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitDeep source" data-od-id="pr-link-02-source">GitHub ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">03</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">GitIssue</strong>
-                            <span class="pr-sub">Cross-repo GitHub issue search. Browse, filter, and sort issues across all of GitHub with label tracking, language filters, and customizable views — entirely client-side.</span>
+                    <article class="project-row" data-od-id="pr-03">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-03">03</span>
+                        <div class="pr-info" data-od-id="pr-info-03">
+                            <strong class="pr-title" data-od-id="pr-title-03">GitIssue</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-03">Cross-repo GitHub issue search. Browse, filter, and sort issues across all of GitHub with label tracking, language filters, and customizable views — entirely client-side.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Next.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind</span>
-                            <span class="tag">GitHub API</span>
+                        <div class="pr-stack" data-od-id="pr-stack-03">
+                            <span class="tag" data-od-id="tag-03-1">Next.js</span>
+                            <span class="tag" data-od-id="tag-03-2">TypeScript</span>
+                            <span class="tag" data-od-id="tag-03-3">Tailwind</span>
+                            <span class="tag" data-od-id="tag-03-4">GitHub API</span>
                         </div>
-                        <span class="pr-type">Live web app</span>
-                        <span class="pr-links">
-                            <a href="https://gitissue.vercel.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitIssue live demo">Live ↗</a>
-                            <a href="https://github.com/Yuvraj-Sarathe/Git-Issue" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitIssue source">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-03">Live web app</span>
+                        <span class="pr-links" data-od-id="pr-links-03">
+                            <a href="https://gitissue.vercel.app" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitIssue live demo" data-od-id="pr-link-03-live">Live ↗</a>
+                            <a href="https://github.com/Yuvraj-Sarathe/Git-Issue" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="GitIssue source" data-od-id="pr-link-03-source">GitHub ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">04</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Hangman in Java</strong>
-                            <span class="pr-sub">Production-ready desktop game bundled with its own JRE. Distributed as a Windows .zip executable.</span>
+                    <article class="project-row" data-od-id="pr-04">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-04">04</span>
+                        <div class="pr-info" data-od-id="pr-info-04">
+                            <strong class="pr-title" data-od-id="pr-title-04">Hangman in Java</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-04">Production-ready desktop game bundled with its own JRE. Distributed as a Windows .zip executable.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Java</span>
+                        <div class="pr-stack" data-od-id="pr-stack-04">
+                            <span class="tag" data-od-id="tag-04-1">Java</span>
                         </div>
-                        <span class="pr-type">Standalone .exe</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/Hangman-in-Java" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Hangman game source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-04">Standalone .exe</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/Hangman-in-Java" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Hangman game source on GitHub" data-od-id="pr-link-04">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">05</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Adaptive Connect 4</strong>
-                            <span class="pr-sub">Fully functional Connect 4 game featuring adaptive graphics. Game logic powered by NumPy, rendered using Pygame.</span>
+                    <article class="project-row" data-od-id="pr-05">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-05">05</span>
+                        <div class="pr-info" data-od-id="pr-info-05">
+                            <strong class="pr-title" data-od-id="pr-title-05">Adaptive Connect 4</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-05">Fully functional Connect 4 game featuring adaptive graphics. Game logic powered by NumPy, rendered using Pygame.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pygame</span>
-                            <span class="tag">NumPy</span>
+                        <div class="pr-stack" data-od-id="pr-stack-05">
+                            <span class="tag" data-od-id="tag-05-1">Python</span>
+                            <span class="tag" data-od-id="tag-05-2">Pygame</span>
+                            <span class="tag" data-od-id="tag-05-3">NumPy</span>
                         </div>
-                        <span class="pr-type">Standalone binary</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/Connect4-in-Python" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Connect Four source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-05">Standalone binary</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/Connect4-in-Python" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Connect Four source on GitHub" data-od-id="pr-link-05">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">06</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">One HTML File Challenge</strong>
-                            <span class="pr-sub">Masterclass in minimalist coding — building a functional tool entirely within a single HTML file. Focused on code density and zero external dependencies.</span>
+                    <article class="project-row" data-od-id="pr-06">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-06">06</span>
+                        <div class="pr-info" data-od-id="pr-info-06">
+                            <strong class="pr-title" data-od-id="pr-title-06">One HTML File Challenge</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-06">Masterclass in minimalist coding — building a functional tool entirely within a single HTML file. Focused on code density and zero external dependencies.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                        <div class="pr-stack" data-od-id="pr-stack-06">
+                            <span class="tag" data-od-id="tag-06-1">HTML</span>
+                            <span class="tag" data-od-id="tag-06-2">CSS</span>
+                            <span class="tag" data-od-id="tag-06-3">JavaScript</span>
                         </div>
-                        <span class="pr-type">Single-file web app</span>
-                        <span class="pr-links">
-                            <a href="https://github.com/Yuvraj-Sarathe/OFE" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE source on GitHub">GitHub ↗</a>
-                            <a href="https://Yuvraj-Sarathe.github.io/OFE/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE live demo">Live ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-06">Single-file web app</span>
+                        <span class="pr-links" data-od-id="pr-links-06">
+                            <a href="https://github.com/Yuvraj-Sarathe/OFE" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE source on GitHub" data-od-id="pr-link-06-source">GitHub ↗</a>
+                            <a href="https://Yuvraj-Sarathe.github.io/OFE/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE live demo" data-od-id="pr-link-06-live">Live ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">07</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">OFE-PRO</strong>
-                            <span class="pr-sub">Full-fledged production version with modular architecture. Enhanced UX, optimized performance, and scalable state management.</span>
+                    <article class="project-row" data-od-id="pr-07">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-07">07</span>
+                        <div class="pr-info" data-od-id="pr-info-07">
+                            <strong class="pr-title" data-od-id="pr-title-07">OFE-PRO</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-07">Full-fledged production version with modular architecture. Enhanced UX, optimized performance, and scalable state management.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind CSS</span>
+                        <div class="pr-stack" data-od-id="pr-stack-07">
+                            <span class="tag" data-od-id="tag-07-1">React</span>
+                            <span class="tag" data-od-id="tag-07-2">TypeScript</span>
+                            <span class="tag" data-od-id="tag-07-3">Tailwind CSS</span>
                         </div>
-                        <span class="pr-type">Web application</span>
-                        <span class="pr-links">
-                            <a href="https://github.com/Yuvraj-Sarathe/OFE-PRO" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO source on GitHub">GitHub ↗</a>
-                            <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO live demo">Live ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-07">Web application</span>
+                        <span class="pr-links" data-od-id="pr-links-07">
+                            <a href="https://github.com/Yuvraj-Sarathe/OFE-PRO" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO source on GitHub" data-od-id="pr-link-07-source">GitHub ↗</a>
+                            <a href="https://ofe-pro.vercel.app/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="OFE-PRO live demo" data-od-id="pr-link-07-live">Live ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">08</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">CATMATHS</strong>
-                            <span class="pr-sub">Free web system constructed to help students practice for the CAT quantitative section using automated AI-generated testing templates. Deployed on Vercel platforms.</span>
+                    <article class="project-row" data-od-id="pr-08">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-08">08</span>
+                        <div class="pr-info" data-od-id="pr-info-08">
+                            <strong class="pr-title" data-od-id="pr-title-08">CATMATHS</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-08">Free web system constructed to help students practice for the CAT quantitative section using automated AI-generated testing templates. Deployed on Vercel platforms.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Web Tech</span>
-                            <span class="tag">AI</span>
+                        <div class="pr-stack" data-od-id="pr-stack-08">
+                            <span class="tag" data-od-id="tag-08-1">Web Tech</span>
+                            <span class="tag" data-od-id="tag-08-2">AI</span>
                         </div>
-                        <span class="pr-type">Live web app</span>
-                        <span class="pr-links">
-                            <a href="https://github.com/Yuvraj-Sarathe/CATMATHS" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="CATMATHS source on GitHub">GitHub ↗</a>
-                            <a href="https://catmaths.vercel.app/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="CATMATHS live demo">Live ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-08">Live web app</span>
+                        <span class="pr-links" data-od-id="pr-links-08">
+                            <a href="https://github.com/Yuvraj-Sarathe/CATMATHS" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="CATMATHS source on GitHub" data-od-id="pr-link-08-source">GitHub ↗</a>
+                            <a href="https://catmaths.vercel.app/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="CATMATHS live demo" data-od-id="pr-link-08-live">Live ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">09</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">UniSync</strong>
-                            <span class="pr-sub">Campus ecosystem platform with AI-powered peer matching. Connects students based on interests and academic goals using Google Gemini for intelligent recommendations.</span>
+                    <article class="project-row" data-od-id="pr-09">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-09">09</span>
+                        <div class="pr-info" data-od-id="pr-info-09">
+                            <strong class="pr-title" data-od-id="pr-title-09">UniSync</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-09">Campus ecosystem platform with AI-powered peer matching. Connects students based on interests and academic goals using Google Gemini for intelligent recommendations.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Gemini AI</span>
-                            <span class="tag">Python</span>
+                        <div class="pr-stack" data-od-id="pr-stack-09">
+                            <span class="tag" data-od-id="tag-09-1">Streamlit</span>
+                            <span class="tag" data-od-id="tag-09-2">Gemini AI</span>
+                            <span class="tag" data-od-id="tag-09-3">Python</span>
                         </div>
-                        <span class="pr-type">Hackathon project</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/Unisync" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="UniSync source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-09">Hackathon project</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/Unisync" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="UniSync source on GitHub" data-od-id="pr-link-09">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">10</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">NeuralPlan</strong>
-                            <span class="pr-sub">AI-powered study planner with Vision OCR capabilities. Creates personalized study schedules that adapt to energy levels and learning patterns using Gemini Vision.</span>
+                    <article class="project-row" data-od-id="pr-10">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-10">10</span>
+                        <div class="pr-info" data-od-id="pr-info-10">
+                            <strong class="pr-title" data-od-id="pr-title-10">NeuralPlan</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-10">AI-powered study planner with Vision OCR capabilities. Creates personalized study schedules that adapt to energy levels and learning patterns using Gemini Vision.</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Vision OCR</span>
-                            <span class="tag">Gemini AI</span>
+                        <div class="pr-stack" data-od-id="pr-stack-10">
+                            <span class="tag" data-od-id="tag-10-1">Streamlit</span>
+                            <span class="tag" data-od-id="tag-10-2">Vision OCR</span>
+                            <span class="tag" data-od-id="tag-10-3">Gemini AI</span>
                         </div>
-                        <span class="pr-type">Hackathon project</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/NeuralPlan" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="NeuralPlan source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-10">Hackathon project</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/NeuralPlan" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="NeuralPlan source on GitHub" data-od-id="pr-link-10">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">11</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Guess the number</strong>
-                            <span class="pr-sub">Tkinter GUI, input validation, smart hints, event-driven architecture</span>
+                    <article class="project-row" data-od-id="pr-11">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-11">11</span>
+                        <div class="pr-info" data-od-id="pr-info-11">
+                            <strong class="pr-title" data-od-id="pr-title-11">Guess the number</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-11">Tkinter GUI, input validation, smart hints, event-driven architecture</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Python</span>
-                            <span class="tag">Tkinter</span>
+                        <div class="pr-stack" data-od-id="pr-stack-11">
+                            <span class="tag" data-od-id="tag-11-1">Python</span>
+                            <span class="tag" data-od-id="tag-11-2">Tkinter</span>
                         </div>
-                        <span class="pr-type">GUI application</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/GuessTheNumberGame" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Guess the Number source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-11">GUI application</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/GuessTheNumberGame" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Guess the Number source on GitHub" data-od-id="pr-link-11">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">12</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Tic-Tac-Toe</strong>
-                            <span class="pr-sub">AI opponent, 8-pattern win detection, Windows API colored console</span>
+                    <article class="project-row" data-od-id="pr-12">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-12">12</span>
+                        <div class="pr-info" data-od-id="pr-info-12">
+                            <strong class="pr-title" data-od-id="pr-title-12">Tic-Tac-Toe</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-12">AI opponent, 8-pattern win detection, Windows API colored console</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">C++</span>
-                            <span class="tag">Windows API</span>
+                        <div class="pr-stack" data-od-id="pr-stack-12">
+                            <span class="tag" data-od-id="tag-12-1">C++</span>
+                            <span class="tag" data-od-id="tag-12-2">Windows API</span>
                         </div>
-                        <span class="pr-type">Console game</span>
-                        <a href="https://github.com/Yuvraj-Sarathe/Tic-Tac-Toe-in-CPP" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Tic-Tac-Toe source on GitHub">GitHub ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-12">Console game</span>
+                        <a href="https://github.com/Yuvraj-Sarathe/Tic-Tac-Toe-in-CPP" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Tic-Tac-Toe source on GitHub" data-od-id="pr-link-12">GitHub ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">13</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Web development projects</strong>
-                            <span class="pr-sub">freeCodeCamp certified, 5 portfolio pieces, fully responsive</span>
+                    <article class="project-row" data-od-id="pr-13">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-13">13</span>
+                        <div class="pr-info" data-od-id="pr-info-13">
+                            <strong class="pr-title" data-od-id="pr-title-13">Web development projects</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-13">freeCodeCamp certified, 5 portfolio pieces, fully responsive</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
+                        <div class="pr-stack" data-od-id="pr-stack-13">
+                            <span class="tag" data-od-id="tag-13-1">HTML</span>
+                            <span class="tag" data-od-id="tag-13-2">CSS</span>
+                            <span class="tag" data-od-id="tag-13-3">JavaScript</span>
                         </div>
-                        <span class="pr-type">Web collection</span>
-                        <span class="pr-links">
-                            <a href="https://github.com/Yuvraj-Sarathe/Web-Projects" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects source on GitHub">GitHub ↗</a>
-                            <a href="https://Yuvraj-Sarathe.github.io/Web-Projects/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects live demo">Live ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-13">Web collection</span>
+                        <span class="pr-links" data-od-id="pr-links-13">
+                            <a href="https://github.com/Yuvraj-Sarathe/Web-Projects" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects source on GitHub" data-od-id="pr-link-13-source">GitHub ↗</a>
+                            <a href="https://Yuvraj-Sarathe.github.io/Web-Projects/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="Web Projects live demo" data-od-id="pr-link-13-live">Live ↗</a>
                         </span>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">14</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">DSA practice log</strong>
-                            <span class="pr-sub">68 unique solves, 76% acceptance, Striver A2Z curriculum — ongoing</span>
+                    <article class="project-row" data-od-id="pr-14">
+                        <span class="pr-num" aria-hidden="true" data-od-id="pr-num-14">14</span>
+                        <div class="pr-info" data-od-id="pr-info-14">
+                            <strong class="pr-title" data-od-id="pr-title-14">DSA practice log</strong>
+                            <span class="pr-sub" data-od-id="pr-sub-14">68 unique solves, 76% acceptance, Striver A2Z curriculum — ongoing</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Java</span>
-                            <span class="tag">Algorithms</span>
+                        <div class="pr-stack" data-od-id="pr-stack-14">
+                            <span class="tag" data-od-id="tag-14-1">Java</span>
+                            <span class="tag" data-od-id="tag-14-2">Algorithms</span>
                         </div>
-                        <span class="pr-type">Ongoing</span>
-                        <a href="https://leetcode.com/u/Yuvraj_Sarathe/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="LeetCode profile">LeetCode ↗</a>
+                        <span class="pr-type" data-od-id="pr-type-14">Ongoing</span>
+                        <a href="https://leetcode.com/u/Yuvraj_Sarathe/" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="LeetCode profile" data-od-id="pr-link-14">LeetCode ↗</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section skills-section">
-            <div class="section-inner">
-                <div class="section-header" data-reveal="fade-up">
-                    <span class="section-num" aria-hidden="true">03</span>
-                    <h2 class="section-heading">Stack &amp; tools</h2>
+        <section id="skills" class="section skills-section" data-od-id="section-skills">
+            <div class="section-inner" data-od-id="skills-inner">
+                <div class="section-header" data-reveal="fade-up" data-od-id="skills-header">
+                    <span class="section-num" aria-hidden="true" data-od-id="skills-section-num">03</span>
+                    <h2 class="section-heading" data-od-id="skills-heading">Stack &amp; tools</h2>
                 </div>
 
-                <div class="skills-cols">
-                    <div class="skills-col" data-reveal="fade-up" data-delay="1">
-                        <h3 class="skills-col-title">Proficient</h3>
-                        <ul class="skills-list">
-                            <li>
-                                <strong class="skill-name">CI/CD &amp; Automation</strong>
-                                <span class="skill-note">GitHub Actions infrastructure integration, automated versioning systems, changelog release generation</span>
+                <div class="skills-cols" data-od-id="skills-cols">
+                    <div class="skills-col" data-reveal="fade-up" data-delay="1" data-od-id="skills-col-proficient">
+                        <h3 class="skills-col-title" data-od-id="skills-col-title-proficient">Proficient</h3>
+                        <ul class="skills-list" data-od-id="skills-list-proficient">
+                            <li data-od-id="skill-ci-cd">
+                                <strong class="skill-name" data-od-id="skill-name-ci-cd">CI/CD &amp; Automation</strong>
+                                <span class="skill-note" data-od-id="skill-note-ci-cd">GitHub Actions infrastructure integration, automated versioning systems, changelog release generation</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">Java</strong>
-                                <span class="skill-note">Standalone executables, 68+ DSA problems, Collections Framework mastery</span>
+                            <li data-od-id="skill-java">
+                                <strong class="skill-name" data-od-id="skill-name-java">Java</strong>
+                                <span class="skill-note" data-od-id="skill-note-java">Standalone executables, 68+ DSA problems, Collections Framework mastery</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">Python</strong>
-                                <span class="skill-note">Deployed AI web apps via Streamlit, standalone binaries via PyInstaller</span>
+                            <li data-od-id="skill-python">
+                                <strong class="skill-name" data-od-id="skill-name-python">Python</strong>
+                                <span class="skill-note" data-od-id="skill-note-python">Deployed AI web apps via Streamlit, standalone binaries via PyInstaller</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">React + TypeScript</strong>
-                                <span class="skill-note">OFE-PRO built with component-based architecture, hooks, and Vite</span>
+                            <li data-od-id="skill-react-ts">
+                                <strong class="skill-name" data-od-id="skill-name-react-ts">React + TypeScript</strong>
+                                <span class="skill-note" data-od-id="skill-note-react-ts">OFE-PRO built with component-based architecture, hooks, and Vite</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">Tailwind CSS</strong>
-                                <span class="skill-note">Utility-first styling for rapid UI development, modern glassmorphism</span>
+                            <li data-od-id="skill-tailwind">
+                                <strong class="skill-name" data-od-id="skill-name-tailwind">Tailwind CSS</strong>
+                                <span class="skill-note" data-od-id="skill-note-tailwind">Utility-first styling for rapid UI development, modern glassmorphism</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">Git &amp; GitHub Operations</strong>
-                                <span class="skill-note">Organization workspace management, cross-contributor review cycles, Code Owner maintenance</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="skills-col" data-reveal="fade-up" data-delay="2">
-                        <h3 class="skills-col-title">Familiar</h3>
-                        <ul class="skills-list">
-                            <li>
-                                <strong class="skill-name">Docker &amp; Containers</strong>
-                                <span class="skill-note">Containerized configuration tracking, run execution lifecycle monitoring</span>
-                            </li>
-                            <li>
-                                <strong class="skill-name">Kubernetes</strong>
-                                <span class="skill-note">Cluster orchestration workload status analysis, basic pod environment tracking</span>
-                            </li>
-                            <li>
-                                <strong class="skill-name">Node.js</strong>
-                                <span class="skill-note">Terminal script utilities, asynchronous command systems, package integration</span>
-                            </li>
-                            <li>
-                                <strong class="skill-name">JavaScript / C++</strong>
-                                <span class="skill-note">DOM environment manipulation, console logic scripts, basic native operating systems API controls</span>
+                            <li data-od-id="skill-git">
+                                <strong class="skill-name" data-od-id="skill-name-git">Git &amp; GitHub Operations</strong>
+                                <span class="skill-note" data-od-id="skill-note-git">Organization workspace management, cross-contributor review cycles, Code Owner maintenance</span>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="skills-col" data-reveal="fade-up" data-delay="3">
-                        <h3 class="skills-col-title">Expanding in 2026</h3>
-                        <ul class="skills-list">
-                            <li>
-                                <strong class="skill-name">Flask &amp; Backend Design</strong>
-                                <span class="skill-note">REST API construction, backend server structures</span>
+                    <div class="skills-col" data-reveal="fade-up" data-delay="2" data-od-id="skills-col-familiar">
+                        <h3 class="skills-col-title" data-od-id="skills-col-title-familiar">Familiar</h3>
+                        <ul class="skills-list" data-od-id="skills-list-familiar">
+                            <li data-od-id="skill-docker">
+                                <strong class="skill-name" data-od-id="skill-name-docker">Docker &amp; Containers</strong>
+                                <span class="skill-note" data-od-id="skill-note-docker">Containerized configuration tracking, run execution lifecycle monitoring</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">SQL Database Design</strong>
-                                <span class="skill-note">Relational tables structure, query optimization routines</span>
+                            <li data-od-id="skill-k8s">
+                                <strong class="skill-name" data-od-id="skill-name-k8s">Kubernetes</strong>
+                                <span class="skill-note" data-od-id="skill-note-k8s">Cluster orchestration workload status analysis, basic pod environment tracking</span>
                             </li>
-                            <li>
-                                <strong class="skill-name">Next.js Architecture</strong>
-                                <span class="skill-note">Full-stack server-side processing, framework routing</span>
+                            <li data-od-id="skill-nodejs">
+                                <strong class="skill-name" data-od-id="skill-name-nodejs">Node.js</strong>
+                                <span class="skill-note" data-od-id="skill-note-nodejs">Terminal script utilities, asynchronous command systems, package integration</span>
+                            </li>
+                            <li data-od-id="skill-js-cpp">
+                                <strong class="skill-name" data-od-id="skill-name-js-cpp">JavaScript / C++</strong>
+                                <span class="skill-note" data-od-id="skill-note-js-cpp">DOM environment manipulation, console logic scripts, basic native operating systems API controls</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-col" data-reveal="fade-up" data-delay="3" data-od-id="skills-col-expanding">
+                        <h3 class="skills-col-title" data-od-id="skills-col-title-expanding">Expanding in 2026</h3>
+                        <ul class="skills-list" data-od-id="skills-list-expanding">
+                            <li data-od-id="skill-flask">
+                                <strong class="skill-name" data-od-id="skill-name-flask">Flask &amp; Backend Design</strong>
+                                <span class="skill-note" data-od-id="skill-note-flask">REST API construction, backend server structures</span>
+                            </li>
+                            <li data-od-id="skill-sql">
+                                <strong class="skill-name" data-od-id="skill-name-sql">SQL Database Design</strong>
+                                <span class="skill-note" data-od-id="skill-note-sql">Relational tables structure, query optimization routines</span>
+                            </li>
+                            <li data-od-id="skill-nextjs">
+                                <strong class="skill-name" data-od-id="skill-name-nextjs">Next.js Architecture</strong>
+                                <span class="skill-note" data-od-id="skill-note-nextjs">Full-stack server-side processing, framework routing</span>
                             </li>
                         </ul>
                     </div>
@@ -650,162 +656,166 @@
             </div>
         </section>
 
-        <section id="certificates" class="section certificates-section">
-            <div class="section-inner">
-                <div class="section-header" data-reveal="fade-up">
-                    <span class="section-num" aria-hidden="true">04</span>
-                    <h2 class="section-heading">Certifications</h2>
+        <section id="certificates" class="section certificates-section" data-od-id="section-certificates">
+            <div class="section-inner" data-od-id="certificates-inner">
+                <div class="section-header" data-reveal="fade-up" data-od-id="certificates-header">
+                    <span class="section-num" aria-hidden="true" data-od-id="certificates-section-num">04</span>
+                    <h2 class="section-heading" data-od-id="certificates-heading">Certifications</h2>
                 </div>
 
-                <div class="project-list" data-reveal="fade-up" data-delay="1">
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">01</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Responsive Web Design</strong>
-                            <span class="pr-sub">freeCodeCamp — HTML, CSS, Flexbox, Grid, Responsive Design Principles</span>
+                <div class="project-list" data-reveal="fade-up" data-delay="1" data-od-id="certificates-list">
+                    <article class="project-row" data-od-id="cert-01">
+                        <span class="pr-num" aria-hidden="true" data-od-id="cert-num-01">01</span>
+                        <div class="pr-info" data-od-id="cert-info-01">
+                            <strong class="pr-title" data-od-id="cert-title-01">Responsive Web Design</strong>
+                            <span class="pr-sub" data-od-id="cert-sub-01">freeCodeCamp — HTML, CSS, Flexbox, Grid, Responsive Design Principles</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Web Development</span>
+                        <div class="pr-stack" data-od-id="cert-stack-01">
+                            <span class="tag" data-od-id="cert-tag-01">Web Development</span>
                         </div>
-                        <span class="pr-type">Certification</span>
-                        <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                        <span class="pr-type" data-od-id="cert-type-01">Certification</span>
+                        <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate" data-od-id="cert-link-01">View ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">02</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Frontend Development</strong>
-                            <span class="pr-sub">Modern frontend technologies and best practices</span>
+                    <article class="project-row" data-od-id="cert-02">
+                        <span class="pr-num" aria-hidden="true" data-od-id="cert-num-02">02</span>
+                        <div class="pr-info" data-od-id="cert-info-02">
+                            <strong class="pr-title" data-od-id="cert-title-02">Frontend Development</strong>
+                            <span class="pr-sub" data-od-id="cert-sub-02">Modern frontend technologies and best practices</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Frontend</span>
+                        <div class="pr-stack" data-od-id="cert-stack-02">
+                            <span class="tag" data-od-id="cert-tag-02">Frontend</span>
                         </div>
-                        <span class="pr-type">Certification</span>
-                        <a href="Certificates/Frontend.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                        <span class="pr-type" data-od-id="cert-type-02">Certification</span>
+                        <a href="Certificates/Frontend.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate" data-od-id="cert-link-02">View ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">03</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Hackvento 2k26</strong>
-                            <span class="pr-sub">Hackathon participation certificate</span>
+                    <article class="project-row" data-od-id="cert-03">
+                        <span class="pr-num" aria-hidden="true" data-od-id="cert-num-03">03</span>
+                        <div class="pr-info" data-od-id="cert-info-03">
+                            <strong class="pr-title" data-od-id="cert-title-03">Hackvento 2k26</strong>
+                            <span class="pr-sub" data-od-id="cert-sub-03">Hackathon participation certificate</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Hackathon</span>
+                        <div class="pr-stack" data-od-id="cert-stack-03">
+                            <span class="tag" data-od-id="cert-tag-03">Hackathon</span>
                         </div>
-                        <span class="pr-type">Participation</span>
-                        <a href="Certificates/Hackvento2k26.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                        <span class="pr-type" data-od-id="cert-type-03">Participation</span>
+                        <a href="Certificates/Hackvento2k26.png" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate" data-od-id="cert-link-03">View ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">04</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Modern AI</strong>
-                            <span class="pr-sub">Artificial Intelligence and Machine Learning fundamentals</span>
+                    <article class="project-row" data-od-id="cert-04">
+                        <span class="pr-num" aria-hidden="true" data-od-id="cert-num-04">04</span>
+                        <div class="pr-info" data-od-id="cert-info-04">
+                            <strong class="pr-title" data-od-id="cert-title-04">Modern AI</strong>
+                            <span class="pr-sub" data-od-id="cert-sub-04">Artificial Intelligence and Machine Learning fundamentals</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">AI/ML</span>
+                        <div class="pr-stack" data-od-id="cert-stack-04">
+                            <span class="tag" data-od-id="cert-tag-04">AI/ML</span>
                         </div>
-                        <span class="pr-type">Certification</span>
-                        <a href="Certificates/ModernAI.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                        <span class="pr-type" data-od-id="cert-type-04">Certification</span>
+                        <a href="Certificates/ModernAI.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate" data-od-id="cert-link-04">View ↗</a>
                     </article>
 
-                    <article class="project-row">
-                        <span class="pr-num" aria-hidden="true">05</span>
-                        <div class="pr-info">
-                            <strong class="pr-title">Networking Fundamentals</strong>
-                            <span class="pr-sub">Computer networking concepts and protocols</span>
+                    <article class="project-row" data-od-id="cert-05">
+                        <span class="pr-num" aria-hidden="true" data-od-id="cert-num-05">05</span>
+                        <div class="pr-info" data-od-id="cert-info-05">
+                            <strong class="pr-title" data-od-id="cert-title-05">Networking Fundamentals</strong>
+                            <span class="pr-sub" data-od-id="cert-sub-05">Computer networking concepts and protocols</span>
                         </div>
-                        <div class="pr-stack">
-                            <span class="tag">Networking</span>
+                        <div class="pr-stack" data-od-id="cert-stack-05">
+                            <span class="tag" data-od-id="cert-tag-05">Networking</span>
                         </div>
-                        <span class="pr-type">Certification</span>
-                        <a href="Certificates/NetworkingCert.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate">View ↗</a>
+                        <span class="pr-type" data-od-id="cert-type-05">Certification</span>
+                        <a href="Certificates/NetworkingCert.pdf" target="_blank" rel="noopener noreferrer" class="pr-link" aria-label="View Certificate" data-od-id="cert-link-05">View ↗</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section contact-section">
-            <div class="section-inner">
-                <div class="section-header" data-reveal="fade-up">
-                    <span class="section-num" aria-hidden="true">05</span>
-                    <h2 class="section-heading">Let's connect</h2>
-                    <p class="section-sub">Open to technical feedback, open-source collaboration, and security-focused development opportunities.</p>
+        <section id="contact" class="section contact-section" data-od-id="section-contact">
+            <div class="section-inner" data-od-id="contact-inner">
+                <div class="section-header" data-reveal="fade-up" data-od-id="contact-header">
+                    <span class="section-num" aria-hidden="true" data-od-id="contact-section-num">05</span>
+                    <h2 class="section-heading" data-od-id="contact-heading">Let's connect</h2>
+                    <p class="section-sub" data-od-id="contact-sub">Open to technical feedback, open-source collaboration, and security-focused development opportunities.</p>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="contact-form-wrap" data-reveal="fade-up" data-delay="1">
-                        <form id="contactForm" class="contact-form" novalidate>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" autocomplete="name" required>
-                                <span class="form-error" id="nameError" role="alert"></span>
+                <div class="contact-grid" data-od-id="contact-grid">
+                    <div class="contact-form-wrap" data-reveal="fade-up" data-delay="1" data-od-id="contact-form-wrap">
+                        <form id="contactForm" class="contact-form" novalidate data-od-id="contact-form">
+                            <div class="form-group" data-od-id="form-group-name">
+                                <label for="name" data-od-id="form-label-name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required data-od-id="form-input-name">
+                                <span class="form-error" id="nameError" role="alert" data-od-id="form-error-name"></span>
                             </div>
 
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" autocomplete="email" required>
-                                <span class="form-error" id="emailError" role="alert"></span>
+                            <div class="form-group" data-od-id="form-group-email">
+                                <label for="email" data-od-id="form-label-email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required data-od-id="form-input-email">
+                                <span class="form-error" id="emailError" role="alert" data-od-id="form-error-email"></span>
                             </div>
 
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                                <span class="form-error" id="subjectError" role="alert"></span>
+                            <div class="form-group" data-od-id="form-group-subject">
+                                <label for="subject" data-od-id="form-label-subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required data-od-id="form-input-subject">
+                                <span class="form-error" id="subjectError" role="alert" data-od-id="form-error-subject"></span>
                             </div>
 
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                                <span class="form-error" id="messageError" role="alert"></span>
+                            <div class="form-group" data-od-id="form-group-message">
+                                <label for="message" data-od-id="form-label-message">Message</label>
+                                <textarea id="message" name="message" rows="5" required data-od-id="form-input-message"></textarea>
+                                <span class="form-error" id="messageError" role="alert" data-od-id="form-error-message"></span>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-submit">
-                                <span>Send message</span>
-                                <span class="btn-icon">→</span>
+                            <button type="submit" class="btn btn-primary btn-submit" data-od-id="form-submit">
+                                <span data-od-id="form-submit-text">Send message</span>
+                                <span class="btn-icon" data-od-id="form-submit-icon">→</span>
                             </button>
                         </form>
 
-                        <div class="thank-you" id="thankYou" hidden>
-                            <span class="ty-icon" aria-hidden="true">✓</span>
-                            <h3>Message sent</h3>
-                            <p>Your message has been forwarded. I'll get back to you soon.</p>
-                            <button class="btn btn-outline" id="backToForm">
-                                <span>Send another</span>
-                                <span class="btn-icon">→</span>
+                        <div class="thank-you" id="thankYou" hidden data-od-id="thank-you">
+                            <span class="ty-icon" aria-hidden="true" data-od-id="ty-icon">✓</span>
+                            <h3 data-od-id="ty-heading">Message sent</h3>
+                            <p data-od-id="ty-text">Your message has been forwarded. I'll get back to you soon.</p>
+                            <button class="btn btn-outline" id="backToForm" data-od-id="ty-back-btn">
+                                <span data-od-id="ty-back-text">Send another</span>
+                                <span class="btn-icon" data-od-id="ty-back-icon">→</span>
                             </button>
                         </div>
                     </div>
 
-                    <aside class="contact-sidebar" data-reveal="fade-up" data-delay="2">
-                        <nav class="contact-links" aria-label="Social links">
-                            <a href="mailto:yuvrajsarathe07@gmail.com" class="contact-link">
-                                <span class="cl-label">Email</span>
-                                <span class="cl-val">yuvrajsarathe07@gmail.com</span>
+                    <aside class="contact-sidebar" data-reveal="fade-up" data-delay="2" data-od-id="contact-sidebar">
+                        <nav class="contact-links" aria-label="Social links" data-od-id="contact-links">
+                            <a href="mailto:yuvrajsarathe07@gmail.com" class="contact-link" data-od-id="contact-link-email">
+                                <span class="cl-label" data-od-id="cl-label-email">Email</span>
+                                <span class="cl-val" data-od-id="cl-val-email">yuvrajsarathe07@gmail.com</span>
                             </a>
-                            <a href="https://github.com/Yuvraj-Sarathe" target="_blank" rel="noopener noreferrer" class="contact-link">
-                                <span class="cl-label">GitHub</span>
-                                <span class="cl-val">Yuvraj-Sarathe ↗</span>
+                            <a href="https://github.com/Yuvraj-Sarathe" target="_blank" rel="noopener noreferrer" class="contact-link" data-od-id="contact-link-github">
+                                <span class="cl-label" data-od-id="cl-label-github">GitHub</span>
+                                <span class="cl-val" data-od-id="cl-val-github">Yuvraj-Sarathe ↗</span>
                             </a>
-                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" rel="noopener noreferrer" class="contact-link">
-                                <span class="cl-label">LinkedIn</span>
-                                <span class="cl-val">yuvraj-sarathe ↗</span>
+                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" rel="noopener noreferrer" class="contact-link" data-od-id="contact-link-linkedin">
+                                <span class="cl-label" data-od-id="cl-label-linkedin">LinkedIn</span>
+                                <span class="cl-val" data-od-id="cl-val-linkedin">yuvraj-sarathe ↗</span>
                             </a>
-                            <a href="https://leetcode.com/u/Yuvraj_Sarathe/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                                <span class="cl-label">LeetCode</span>
-                                <span class="cl-val">Yuvraj_Sarathe ↗</span>
+                            <a href="resume.pdf" class="contact-link" data-od-id="contact-link-resume" download>
+                                <span class="cl-label" data-od-id="cl-label-resume">Resume</span>
+                                <span class="cl-val" data-od-id="cl-val-resume">Download PDF ↗</span>
+                            </a>
+                            <a href="https://leetcode.com/u/Yuvraj_Sarathe/" target="_blank" rel="noopener noreferrer" class="contact-link" data-od-id="contact-link-leetcode">
+                                <span class="cl-label" data-od-id="cl-label-leetcode">LeetCode</span>
+                                <span class="cl-val" data-od-id="cl-val-leetcode">Yuvraj_Sarathe ↗</span>
                             </a>
                         </nav>
 
-                        <blockquote class="contact-quote">
-                            <p>"Quality is not an act, it is a habit."</p>
-                            <cite>— Aristotle</cite>
+                        <blockquote class="contact-quote" data-od-id="contact-quote">
+                            <p data-od-id="contact-quote-text">"Quality is not an act, it is a habit."</p>
+                            <cite data-od-id="contact-quote-cite">— Aristotle</cite>
                         </blockquote>
 
-                        <div class="contact-loc">
-                            <span class="mono">Bhopal, Madhya Pradesh, India</span>
-                            <span class="loc-note">Available for remote work</span>
+                        <div class="contact-loc" data-od-id="contact-loc">
+                            <span class="mono" data-od-id="contact-loc-city">Bhopal, Madhya Pradesh, India</span>
+                            <span class="loc-note" data-od-id="contact-loc-note">Available for remote work</span>
                         </div>
                     </aside>
                 </div>
@@ -814,24 +824,25 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <strong class="footer-name">Yuvraj Sarathe</strong>
-                <span class="footer-role">Production-First Developer · Bhopal, India</span>
+    <footer class="footer" data-od-id="footer">
+        <div class="footer-inner" data-od-id="footer-inner">
+            <div class="footer-left" data-od-id="footer-left">
+                <strong class="footer-name" data-od-id="footer-name">Yuvraj Sarathe</strong>
+                <span class="footer-role" data-od-id="footer-role">Production-First Developer · Bhopal, India</span>
             </div>
-            <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
+            <nav class="footer-nav" aria-label="Footer navigation" data-od-id="footer-nav">
+                <a href="#about" data-od-id="footer-link-about">About</a>
+                <a href="#projects" data-od-id="footer-link-projects">Projects</a>
+                <a href="#skills" data-od-id="footer-link-skills">Skills</a>
+                <a href="#certificates" data-od-id="footer-link-certificates">Certificates</a>
+                <a href="resume.pdf" data-od-id="footer-link-resume" download>Resume</a>
+                <a href="#contact" data-od-id="footer-link-contact">Contact</a>
             </nav>
-            <span class="footer-copy mono">© 2025</span>
+            <span class="footer-copy mono" data-od-id="footer-copy">© 2025</span>
         </div>
     </footer>
 
-    <a href="#hero" class="back-top" id="backTop" aria-label="Back to top" hidden>↑</a>
+    <a href="#hero" class="back-top" id="backTop" aria-label="Back to top" hidden data-od-id="back-top">↑</a>
 
     <script src="script.js"></script>
 </body>
