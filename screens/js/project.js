@@ -97,6 +97,85 @@ function setupBackToTop() {
 }
 
 /* ═══════════════════════════════════════════════════════════
+   CLICKSPARK — animated sparks on click
+   ═══════════════════════════════════════════════════════════ */
+function setupClickSpark() {
+    const canvas = document.createElement('canvas');
+    canvas.className = 'click-spark-canvas';
+    canvas.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    let sparks = [];
+    let raf;
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function getAccentColor() {
+        const style = getComputedStyle(document.documentElement);
+        return style.getPropertyValue('--accent').trim() || '#e8704a';
+    }
+
+    function handleClick(e) {
+        const sparkColor = getAccentColor();
+        const sparkCount = 8;
+        const duration = 400;
+        const now = performance.now();
+
+        for (let i = 0; i < sparkCount; i++) {
+            const angle = (2 * Math.PI * i) / sparkCount;
+            sparks.push({
+                x: e.clientX,
+                y: e.clientY,
+                angle,
+                startTime: now
+            });
+        }
+
+        if (!raf) raf = requestAnimationFrame(draw);
+    }
+
+    function draw(timestamp) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const sparkColor = getAccentColor();
+
+        sparks = sparks.filter(spark => {
+            const elapsed = timestamp - spark.startTime;
+            if (elapsed >= 400) return false;
+
+            const progress = elapsed / 400;
+            const eased = progress * (2 - progress);
+            const distance = eased * 15;
+            const lineLength = 10 * (1 - eased);
+
+            const x1 = spark.x + distance * Math.cos(spark.angle);
+            const y1 = spark.y + distance * Math.sin(spark.angle);
+            const x2 = spark.x + (distance + lineLength) * Math.cos(spark.angle);
+            const y2 = spark.y + (distance + lineLength) * Math.sin(spark.angle);
+
+            ctx.strokeStyle = sparkColor;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+
+            return true;
+        });
+
+        if (sparks.length > 0) raf = requestAnimationFrame(draw);
+        else raf = null;
+    }
+
+    document.addEventListener('click', handleClick);
+}
+
+/* ═══════════════════════════════════════════════════════════
    HERO ENTRANCE
    ═══════════════════════════════════════════════════════════ */
 function setupHeroEntrance() {
@@ -122,7 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setupScrollAnimations();
     setupBackToTop();
     setupHeroEntrance();
+    setupClickSpark();
 
     const themeToggle = document.getElementById('themeToggle');
-    if (themeToggle) themeToggle.addEventListener('click', cycleTheme);
+    if (themeToggle) themeToggle.addEventListener('click', () => {
+        cycleTheme();
+        if (window.__updateCursorTrail) window.__updateCursorTrail();
+    });
 });
